@@ -1,0 +1,107 @@
+#wdw_NavBar > div > div > .dropdown-menu {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+#wdw_NavBar .wdw_FixedManu {
+  position: fixed;
+  left: 0;
+  top: 173px;
+  width: 100vw !important;
+  height: 70vh;
+  overflow-y: auto;
+  background: transparent;
+}
+header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
+  top: 129px;
+}
+
+#wdw_NavBar .sidebar-left {
+  position: relative;
+  width: auto;
+  border: 1px solid #dde4f0;
+  border-top: transparent;
+  border-radius: 0;
+}
+#wdw_NavBar .dropdown .sidebar-left .menu-texts li .sub-menu {
+  border-radius: 0;
+}
+
+#wdw_NavBar .sidebar-left::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background: #dde4f0;
+}
+@media All and (max-width: 1400px) {
+  /* making flex iems of equal height */
+.box-category {
+  height: 100%;
+}
+.help-item {
+  height: 75px;
+}
+.card-grid-style-3 .card-grid-inner {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #D5DFE4;
+  padding: 25px;
+  position: relative;
+  transition-duration: 0.2s;
+}
+/* decrease the size of deals image */
+.banner-left,
+.banner-middle,
+.banner-right-home6 {
+  height: 297px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 31px;
+  height: 31px;
+  margin-top: 0px;
+}
+.swiper-button-next{
+  left:73px;
+}
+.box-adsolute-banner {
+  min-width: 150px;
+  min-height: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px 10px 5px 10px;
+  background-color: #ffffff;
+}
+}
+
+@media All and (max-width: 1199px) {
+  #wdw_NavBar .wdw_FixedManu {
+    top: 158px;
+  }
+  header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
+    top: 114px;
+  }
+}
+
+@media All and (max-width: 991px) {
+  #wdw_NavBar .wdw_FixedManu {
+    top: 114px;
+  }
+  header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
+    top: 119px;
+  }
+}
+
+@media All and (max-width: 576px) {
+  #wdw_NavBar .wdw_FixedManu {
+    top: 118px;
+  }
+  header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
+    top: 119px;
+  }
+}
