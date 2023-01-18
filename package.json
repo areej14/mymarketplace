@@ -9,7 +9,9 @@
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
     "react-scripts": "5.0.1",
+    "swiper": "^8.4.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

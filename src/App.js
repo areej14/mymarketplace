@@ -1,17 +1,12 @@
-import logo from './logo.svg';
-//  import './style.css';
-//  import './mystyle.css';
-import  Loader  from "./components/Loader";
-import Topbar from './components/Topbar';
-import Header from './components/Header';
+ import './css/style.css';
+ import './css/mystyle.css'; 
+import Home from './pages/Home';
 function App() {
   return (
     <div className="App">
-      {/* <Loader/> */}
-      <Topbar/>
-      <Header/>
+   <Home/>
     </div>
-  );
+  ); 
 }
 
 export default App;
