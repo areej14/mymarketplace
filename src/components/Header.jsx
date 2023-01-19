@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import favicon from "../imgs/template/logo.svg";
 import monitor from "../imgs/template/monitor.svg";
+import ecomImg from "../imgs/page/homepage1/imgsp5.png"
+import logo from "../imgs/template/logo.svg"
+import cart from "../imgs/page/homepage1/imgsp4.png"
+import account from "../imgs/template/ava_1.png"
 const Header = () => {
+  const [toggleClass, setToggleClass]=useState(false)
+  // Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector(".sticky-bar");
+    const scrollTop = window.scrollY;
+    scrollTop >= 200
+      ? header.classList.add("stick")
+      : header.classList.remove("stick");
+  };
+  const navTrigger =()=>{
+    setToggleClass(!toggleClass)
+  }
   return (
-    <>
+    <div > 
       <header className="header header-container sticky-bar">
         <div className="container">
           <div className="main-header">
@@ -81,6 +104,7 @@ const Header = () => {
                     </li>
                     <li className="has-children">
                       <a href="shop-vendor-list.html">Vendors</a>
+                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
                       <ul className="sub-menu">
                         <li>
                           <a href="shop-vendor-list.html">Vendors Listing</a>
@@ -92,13 +116,13 @@ const Header = () => {
                     </li>
                   </ul>
                 </nav>
-                <div className="burger-icon burger-icon-white">
-                  <span className="burger-icon-top"></span>
-                  <span className="burger-icon-mid"></span>
-                  <span className="burger-icon-bottom"></span>
+                <div className={`${toggleClass ? "burger-close" : " "} burger-icon burger-icon-white`} onClick={navTrigger}>
+                  <span className="burger-icon-top" ></span>
+                  <span className="burger-icon-mid" ></span>
+                  <span className="burger-icon-bottom" ></span>
                 </div>
               </div>
-              <div className="header-shop">
+              <div className="header-shop"> 
                 <div className="d-inline-block box-dropdown-cart">
                   <span className="font-lg icon-list icon-account">
                     <span>Account</span>
@@ -142,7 +166,7 @@ const Header = () => {
                     <div className="item-cart mb-20">
                       <div className="cart-image">
                         <img
-                          src="assets/imgs/page/homepage1/imgsp5.png"
+                          src={ecomImg}
                           alt="Ecom"
                         />
                       </div>
@@ -164,7 +188,7 @@ const Header = () => {
                     <div className="item-cart mb-20">
                       <div className="cart-image">
                         <img
-                          src="assets/imgs/page/homepage1/imgsp4.png"
+                          src={cart}
                           alt="Ecom"
                         />
                       </div>
@@ -261,6 +285,7 @@ const Header = () => {
                             Clothing &amp; Apparel
                           </span>
                         </a>
+                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Men</a>
@@ -280,6 +305,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Footwear/Shoes</span>
                         </a>
+                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Men</a>
@@ -299,6 +325,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Cosmetics</span>
                         </a>
+                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Lipsticks</a>
@@ -318,6 +345,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Electronics</span>
                         </a>
+                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Phone Accessories</a>
@@ -547,12 +575,12 @@ const Header = () => {
         {/* <!--===== Update DIV END! =====--> */}
       </header>
       {/*  */}
-      <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div className={`${toggleClass ? "sidebar-visible" : " "} mobile-header-wrapper-style perfect-scrollbar`}>
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
               <a className="d-flex" href="index.html">
-                <img alt="Ecom" src="assets/imgs/template/logo.svg" />
+                <img alt="Ecom" src={logo} />
               </a>
             </div>
             <div className="perfect-scroll">
@@ -563,12 +591,14 @@ const Header = () => {
                       <a className="active" href="index.html">
                         Home
                       </a>
+                      <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                       <ul className="sub-menu"></ul>
                     </li>
                     <li className="has-children">
                       <a href="shop-grid.html">Shop</a>
+                      <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                       <ul className="sub-menu">
-                        <li>
+                        <li >
                           <a href="shop-grid.html">Shop Grid</a>
                         </li>
                         <li>
@@ -620,8 +650,9 @@ const Header = () => {
                       <li>
                         <a href="page-contact.html">Contact</a>
                       </li>
-                      <li className="has-children">
+                      <li className="has-children ">
                         <a href="shop-vendor-list.html">Vendors</a>
+                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
                         <ul className="sub-menu">
                           <li>
                             <a href="shop-vendor-list.html">Vendors Listing</a>
@@ -675,7 +706,7 @@ const Header = () => {
                 <div className="mobile-header-top">
                   <div className="user-account">
                     <a href="page-account.html">
-                      <img src="assets/imgs/template/ava_1.png" alt="Ecom" />
+                      <img src={account} alt="Ecom" />
                     </a>
                     <div className="content">
                       <h6 className="user-name">
@@ -732,7 +763,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
