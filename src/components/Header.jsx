@@ -1,14 +1,68 @@
 import React, { useEffect, useState } from "react";
 import favicon from "../imgs/template/logo.svg";
 import monitor from "../imgs/template/monitor.svg";
-import ecomImg from "../imgs/page/homepage1/imgsp5.png"
-import logo from "../imgs/template/logo.svg"
-import cart from "../imgs/page/homepage1/imgsp4.png"
-import account from "../imgs/template/ava_1.png"
+import ecomImg from "../imgs/page/homepage1/imgsp5.png";
+import logo from "../imgs/template/logo.svg";
+import cart from "../imgs/page/homepage1/imgsp4.png";
+import account from "../imgs/template/ava_1.png";
+import Select from "react-select";
 const Header = () => {
-  const [toggleClass, setToggleClass]=useState(false)
+  const [toggleClass, setToggleClass] = useState(false);
+  const [expandList, setExpandList] = useState(false);
+  const customStyles = {indicatorSeparator: () => {},
+    control: (base, state) => ({
+      ...base,
+      // background: "#023950",
+      minHeight: 30,
+      height: 30,
+      outline: 'none',
+      border:'none',
+      fontSize:13,
+      // Overwrittes the different states of border
+      // borderColor: state.isFocused ? "white" : "white",
+      // Removes weird border around container
+      boxShadow: state.isFocused ? null : null,
+      "&:hover": {
+        // Overwrittes the different states of border
+        borderColor: state.isFocused ? "white" : "white"
+      },
+      
+      // '& svg': { display: 'none' },
+      // '&::before': {
+      //   border: '…',
+      //   transform: 'rotate(…)'
+      // },
+      // '&::after': {
+      //   border: '…',
+      //   transform: 'rotate(…)'
+      // }
+    })
+  };
+  const options = [
+    { value: " Clothing & Apparel", label: " Clothing & Apparel" },
+    { value: "Footwear/Shoes", label: "Footwear/Shoes" },
+    { value: "Cosmetics", label: "Cosmetics" },
+    { value: " Electronics", label: " Electronics" },
+    { value: "Digital Gadgets", label: "Digital Gadgets" },
+    { value: "Games & Toys", label: "Games & Toys" },
+    { value: "Stationery", label: "Stationery" },
+    { value: " Furniture & Equipment", label: " Furniture & Equipment" },
+    { value: "Sports Products", label: "Sports Products" },
+    { value: "Health & Medical", label: "Health & Medical" },
+    { value: "Home Decor", label: "Home Decor" },
+    { value: "Bakery", label: "Bakery" },
+    { value: "Groceries", label: "Groceries" },
+    { value: " Garden & Outdoor", label: " Garden & Outdoor" },
+    { value: "Exercise/Fitness supplies", label: "Exercise/Fitness supplies" },
+    { value: "Jewellery", label: "Jewellery" },
+    { value: "Infant/Baby Products", label: "Infant/Baby Products" },
+    { value: "Restaurent", label: "Restaurent" },
+  ];
   // Sticky Menu Area
   useEffect(() => {
+    //   if (document.querySelector(".select-active").length) {
+    //    console.log('helo')
+    // }
     window.addEventListener("scroll", isSticky);
     return () => {
       window.removeEventListener("scroll", isSticky);
@@ -22,11 +76,14 @@ const Header = () => {
       ? header.classList.add("stick")
       : header.classList.remove("stick");
   };
-  const navTrigger =()=>{
-    setToggleClass(!toggleClass)
-  }
+  const navTrigger = () => {
+    setToggleClass(!toggleClass);
+  };
+  const expand = () => {
+    setExpandList(!expandList);
+  };
   return (
-    <div > 
+    <div>
       <header className="header header-container sticky-bar">
         <div className="container">
           <div className="main-header">
@@ -39,43 +96,18 @@ const Header = () => {
               <div className="header-search">
                 <div className="box-header-search">
                   <form className="form-search" method="post" action="#">
-                    <div className="box-category">
-                      <select
-                        className="select-active select2-hidden-accessible"
-                        data-select2-id="1"
-                        tabindex="-1"
-                        aria-hidden="true"
-                      >
-                        <option>All categories</option>
-                        <option value="Computers Accessories">
-                          Clothing & Apparel
-                        </option>
-                        <option value="Cell Phones">Footwear/Shoes</option>
-                        <option value="Gaming Gatgets">Cosmetics</option>
-                        <option value="Smart watches">Electronics </option>
-                        <option value="Wired Headphone">Digital Gadgets</option>
-                        <option value="Mouse &amp; Keyboard">
-                          Games & Toys
-                        </option>
-                        <option value="Headphone">Stationery</option>
-                        <option value="Bluetooth devices">
-                          Furniture & Equipment
-                        </option>
-                        <option value="Cloud Software">Sports Products</option>
-                        <option value="Cloud Software">Health & Medical</option>
-                        <option value="Cloud Software">Home Decor</option>
-                        <option value="Cloud Software">Bakery</option>
-                        <option value="Cloud Software">Groceries</option>
-                        <option value="Cloud Software">Garden & Outdoor</option>
-                        <option value="Cloud Software">
-                          Exercise/Fitness supplies
-                        </option>
-                        <option value="Cloud Software">Jewellery</option>
-                        <option value="Cloud Software">
-                          Infant/Baby Products
-                        </option>
-                        <option value="Cloud Software">Restaurent</option>
-                      </select>
+                    <div className="box-category" style={{width:'250px'}}>
+                      <Select 
+                      placeholder="All Categories"
+                      // styles1={{}}
+                      styles={customStyles}
+                        options={options}
+                        className="basic-single select2"
+                        classNamePrefix="select"
+                        // defaultValue={options[0]}
+                        // isClearable={true}
+                        isSearchable={true}
+                      />
                     </div>
                     <div className="box-keysearch">
                       <input
@@ -104,7 +136,7 @@ const Header = () => {
                     </li>
                     <li className="has-children">
                       <a href="shop-vendor-list.html">Vendors</a>
-                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
+
                       <ul className="sub-menu">
                         <li>
                           <a href="shop-vendor-list.html">Vendors Listing</a>
@@ -116,13 +148,18 @@ const Header = () => {
                     </li>
                   </ul>
                 </nav>
-                <div className={`${toggleClass ? "burger-close" : " "} burger-icon burger-icon-white`} onClick={navTrigger}>
-                  <span className="burger-icon-top" ></span>
-                  <span className="burger-icon-mid" ></span>
-                  <span className="burger-icon-bottom" ></span>
+                <div
+                  className={`${
+                    toggleClass ? "burger-close" : " "
+                  } burger-icon burger-icon-white`}
+                  onClick={navTrigger}
+                >
+                  <span className="burger-icon-top"></span>
+                  <span className="burger-icon-mid"></span>
+                  <span className="burger-icon-bottom"></span>
                 </div>
               </div>
-              <div className="header-shop"> 
+              <div className="header-shop">
                 <div className="d-inline-block box-dropdown-cart">
                   <span className="font-lg icon-list icon-account">
                     <span>Account</span>
@@ -165,10 +202,7 @@ const Header = () => {
                   <div className="dropdown-cart">
                     <div className="item-cart mb-20">
                       <div className="cart-image">
-                        <img
-                          src={ecomImg}
-                          alt="Ecom"
-                        />
+                        <img src={ecomImg} alt="Ecom" />
                       </div>
                       <div className="cart-info">
                         <a
@@ -187,10 +221,7 @@ const Header = () => {
                     </div>
                     <div className="item-cart mb-20">
                       <div className="cart-image">
-                        <img
-                          src={cart}
-                          alt="Ecom"
-                        />
+                        <img src={cart} alt="Ecom" />
                       </div>
                       <div className="cart-info">
                         <a
@@ -285,7 +316,7 @@ const Header = () => {
                             Clothing &amp; Apparel
                           </span>
                         </a>
-                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
+
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Men</a>
@@ -305,7 +336,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Footwear/Shoes</span>
                         </a>
-                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
+
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Men</a>
@@ -325,7 +356,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Cosmetics</span>
                         </a>
-                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
+
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Lipsticks</a>
@@ -345,7 +376,7 @@ const Header = () => {
                           </span>
                           <span className="text-link">Electronics</span>
                         </a>
-                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
+
                         <ul className="sub-menu">
                           <li>
                             <a href="#">Phone Accessories</a>
@@ -575,7 +606,11 @@ const Header = () => {
         {/* <!--===== Update DIV END! =====--> */}
       </header>
       {/*  */}
-      <div className={`${toggleClass ? "sidebar-visible" : " "} mobile-header-wrapper-style perfect-scrollbar`}>
+      <div
+        className={`${
+          toggleClass ? "sidebar-visible" : " "
+        } mobile-header-wrapper-style perfect-scrollbar`}
+      >
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-content-area">
             <div className="mobile-logo">
@@ -591,13 +626,13 @@ const Header = () => {
                       <a className="active" href="index.html">
                         Home
                       </a>
-                      <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
-                      <ul className="sub-menu"></ul>
+                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
+                      {/* <ul className="sub-menu"></ul> */}
                     </li>
                     <li className="has-children">
                       <a href="shop-grid.html">Shop</a>
-                      <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
-                      <ul className="sub-menu">
+                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
+                      {/* <ul className="sub-menu">
                         <li >
                           <a href="shop-grid.html">Shop Grid</a>
                         </li>
@@ -643,16 +678,20 @@ const Header = () => {
                         <li>
                           <a href="shop-wishlist.html">Shop Wishlist</a>
                         </li>
-                      </ul>
-                      <li>
-                        <a href="page-about-us.html">About</a>
-                      </li>
-                      <li>
-                        <a href="page-contact.html">Contact</a>
-                      </li>
-                      <li className="has-children ">
-                        <a href="shop-vendor-list.html">Vendors</a>
-                        <span class="menu-expand"><i class="fi-rr-caret-down"></i></span>
+                      </ul> */}
+                    </li>
+                    <li>
+                      <a href="page-about-us.html">About</a>
+                    </li>
+                    <li>
+                      <a href="page-contact.html">Contact</a>
+                    </li>
+                    <li class={`has-children ${expandList ? "active" : ""}`}>
+                      <a href="shop-vendor-list.html">Vendors</a>
+                      <span class="menu-expand" onClick={expand}>
+                        <i class="fi-rr-caret-down"></i>
+                      </span>
+                      {expandList && (
                         <ul className="sub-menu">
                           <li>
                             <a href="shop-vendor-list.html">Vendors Listing</a>
@@ -661,43 +700,43 @@ const Header = () => {
                             <a href="shop-vendor-single.html">Vendor Single</a>
                           </li>
                         </ul>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Fashion</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Kid's Zone</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Games</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Electronics</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Medicine & Fitness</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Grocery</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Food Court</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Automotive & Agriculture</a>
-                      </li>
-                      <li>
-                        {" "}
-                        <a href="shop-grid.html">Services</a>
-                      </li>
+                      )}
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Fashion</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Kid's Zone</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Games</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Electronics</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Medicine & Fitness</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Grocery</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Food Court</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Automotive & Agriculture</a>
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="shop-grid.html">Services</a>
                     </li>
                   </ul>
                 </nav>
