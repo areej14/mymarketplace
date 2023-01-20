@@ -9,24 +9,47 @@ import Select from "react-select";
 const Header = () => {
   const [toggleClass, setToggleClass] = useState(false);
   const [expandList, setExpandList] = useState(false);
-  const customStyles = {indicatorSeparator: () => {},
+  const customStyles = {
+    indicatorSeparator: () => {},
+    placeholder: (defaultStyles) => {
+      return {
+          ...defaultStyles,
+          color: '#425A8B', 
+      }
+  },
+    menu: (base) => ({
+      ...base,
+      width: "max-content",
+      minWidth: "85%",
+     marginTop:15,
+      zIndex: "2",
+    }),
+     
+    dropdownIndicator: (base, state) => ({
+      ...base,
+      transition: 'all .2s ease',
+      transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : null,
+      display:'fas fa-angle-double-down',
+      
+    }),
     control: (base, state) => ({
       ...base,
       // background: "#023950",
-      minHeight: 30,
-      height: 30,
-      outline: 'none',
-      border:'none',
-      fontSize:13,
+      minHeight: 13,
+      height: 13,
+      outline: "none",
+      border: "none",
+      fontSize: 13,
       // Overwrittes the different states of border
       // borderColor: state.isFocused ? "white" : "white",
       // Removes weird border around container
       boxShadow: state.isFocused ? null : null,
       "&:hover": {
         // Overwrittes the different states of border
-        borderColor: state.isFocused ? "white" : "white"
+        borderColor: state.isFocused ? "white" : "white",
       },
-      
+     
+
       // '& svg': { display: 'none' },
       // '&::before': {
       //   border: '…',
@@ -36,7 +59,7 @@ const Header = () => {
       //   border: '…',
       //   transform: 'rotate(…)'
       // }
-    })
+    }),
   };
   const options = [
     { value: " Clothing & Apparel", label: " Clothing & Apparel" },
@@ -60,9 +83,6 @@ const Header = () => {
   ];
   // Sticky Menu Area
   useEffect(() => {
-    //   if (document.querySelector(".select-active").length) {
-    //    console.log('helo')
-    // }
     window.addEventListener("scroll", isSticky);
     return () => {
       window.removeEventListener("scroll", isSticky);
@@ -96,16 +116,13 @@ const Header = () => {
               <div className="header-search">
                 <div className="box-header-search">
                   <form className="form-search" method="post" action="#">
-                    <div className="box-category" style={{width:'250px'}}>
-                      <Select 
-                      placeholder="All Categories"
-                      // styles1={{}}
-                      styles={customStyles}
+                    <div className="box-category" style={{ width: "225px" }}>
+                      <Select
+                        placeholder="All Categories"
+                        styles={customStyles}
                         options={options}
                         className="basic-single select2"
                         classNamePrefix="select"
-                        // defaultValue={options[0]}
-                        // isClearable={true}
                         isSearchable={true}
                       />
                     </div>
