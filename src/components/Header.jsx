@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import favicon from "../imgs/template/logo.svg";
 import monitor from "../imgs/template/monitor.svg";
 import ecomImg from "../imgs/page/homepage1/imgsp5.png";
@@ -9,47 +9,46 @@ import Select from "react-select";
 const Header = () => {
   const [toggleClass, setToggleClass] = useState(false);
   const [expandList, setExpandList] = useState(false);
+  const myRef = useRef();
   const customStyles = {
     indicatorSeparator: () => {},
     placeholder: (defaultStyles) => {
       return {
-          ...defaultStyles,
-          color: '#425A8B', 
-      }
-  },
+        ...defaultStyles,
+        color: "#425A8B",
+      };
+    },
     menu: (base) => ({
       ...base,
       width: "max-content",
       minWidth: "85%",
-     marginTop:15,
+      marginTop: 15,
       zIndex: "2",
     }),
-     
+
     dropdownIndicator: (base, state) => ({
       ...base,
-      transition: 'all .2s ease',
-      transform: state.selectProps.menuIsOpen ? 'rotate(180deg)' : null,
-      display:'fas fa-angle-double-down',
-      
+      transition: "all .2s ease",
+      transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : null,
+      svgPath:
+        "M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z",
     }),
     control: (base, state) => ({
       ...base,
       // background: "#023950",
+      width: "max-content",
+      minWidth: "85%",
       minHeight: 13,
       height: 13,
       outline: "none",
       border: "none",
       fontSize: 13,
-      // Overwrittes the different states of border
-      // borderColor: state.isFocused ? "white" : "white",
       // Removes weird border around container
       boxShadow: state.isFocused ? null : null,
       "&:hover": {
         // Overwrittes the different states of border
         borderColor: state.isFocused ? "white" : "white",
       },
-     
-
       // '& svg': { display: 'none' },
       // '&::before': {
       //   border: '…',
@@ -84,10 +83,17 @@ const Header = () => {
   // Sticky Menu Area
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", isSticky);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   });
+   const handleClickOutside = (e) => {
+    if (!myRef.current.contains(e.target)) {
+      setToggleClass(false);
+    }
+  };
   /* Method that will fix header after a specific scrollable */
   const isSticky = (e) => {
     const header = document.querySelector(".sticky-bar");
@@ -103,7 +109,7 @@ const Header = () => {
     setExpandList(!expandList);
   };
   return (
-    <div>
+    <div ref={myRef}>
       <header className="header header-container sticky-bar">
         <div className="container">
           <div className="main-header">
@@ -116,12 +122,12 @@ const Header = () => {
               <div className="header-search">
                 <div className="box-header-search">
                   <form className="form-search" method="post" action="#">
-                    <div className="box-category" style={{ width: "225px" }}>
+                    <div className="box-category">
                       <Select
                         placeholder="All Categories"
                         styles={customStyles}
                         options={options}
-                        className="basic-single select2"
+                        className=" select-active "
                         classNamePrefix="select"
                         isSearchable={true}
                       />
