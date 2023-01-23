@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from 'axios';
 import Banner from "../components/Banner";
 import BestSeller from "../components/BestSeller";
 import BrandList from "../components/BrandList";
@@ -13,6 +14,28 @@ import TopBrands from "../components/TopBrands";
 import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
+  // var axios = require("axios");
+  useEffect(() => {
+   
+
+    var config = {
+      method: "get",
+      url: "https://countydevapi.genial365.com/api/e_web_info/GetWebisteInfoWebConfig",
+      headers: {
+        Authorization:
+          "bearer 8O40MPQJdS7U0rr809wvrbCbEB0IlADGBtwhNHEoB_rhgkitVjZv2yKHAjscETg5JyI3zikr1SBnN001D6PIjHbyl9wo6a8Kn_aPfYv9YwMHnO3nfpZtj0MbWN5X-gyX_L9PmZ1t3_BRt7TgW7Dl9_37nJVaXCBwhxsCKkODzzGWqyPBgjhCKCIcMUIH9kSM0Y0swj2g8E_wxh9YSPvErsv7KuOZFfIqITAZ0DiGUuF9G0UCHbhpJj0dNhzRmqlKjCvadeNLtRPLcPBCsqi2-GW7ADnQuW_Lf60gD47ACmWEOo8HtvnRntE3CSo_BFBjVISrKrKFlJBFFEs0M8MS04TzMtMS2xZbN_RgkN_bhmDrG4HL6Y6npgP1c3WcFRTafYh4GJ6SkaqnKaFcQHUeRg",
+      },
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <>
       <Loader />
