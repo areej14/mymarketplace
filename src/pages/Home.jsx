@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import axios from 'axios';
+import axios from "axios";
 import Banner from "../components/Banner";
 import BestSeller from "../components/BestSeller";
 import BrandList from "../components/BrandList";
@@ -14,16 +14,15 @@ import TopBrands from "../components/TopBrands";
 import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
-  // var axios = require("axios");
+  var CompanyToken =
+    "Bearer bZtncs_05yfrWsVgLIlmP1QhgMcrWEzbok0yC7Bz2wsnI3C-La07N7ecsQyS0mJjxS81-6nSG-MAD4ceURmMr1TqBKWCG7sko0XSFm3WK7u-s_1O4KUwtx89CuP3XF-UpuqAPqQjtnoscet5jYdH5M9CmjRHJpUTN3UyVp2-PD2z3-6Ffg1GWmNac7qnzUUY4DSdwfQfPXTF6CH6jWB748OoVTJG2okxYy7PhyevS8x8ezkf3JuGIF42XQMrChl4CXtMVakufBVot4bNTmXCD-nWTTlMzqDnNnLi6zWPErUuM850DUTJWPYVyW2cckJHH6zYMeJUlKiC-wqeRkWMfprqQv3wx_EJR1t3eWKRvAKQx62kYy6XtD3Pp-fEKqp4-YJq2r5HJF0oKXcEKWQTV1f6GFVVzAjMZo_GZ3_DBWU";
+  var APIURL = "https://countydevapi.genial365.com/";
   useEffect(() => {
-   
-
     var config = {
       method: "get",
-      url: "https://countydevapi.genial365.com/api/e_web_info/GetWebisteInfoWebConfig",
+      url: `${APIURL}api/e_web_info/GetWebisteInfoWebConfig`,
       headers: {
-        Authorization:
-          "bearer 8O40MPQJdS7U0rr809wvrbCbEB0IlADGBtwhNHEoB_rhgkitVjZv2yKHAjscETg5JyI3zikr1SBnN001D6PIjHbyl9wo6a8Kn_aPfYv9YwMHnO3nfpZtj0MbWN5X-gyX_L9PmZ1t3_BRt7TgW7Dl9_37nJVaXCBwhxsCKkODzzGWqyPBgjhCKCIcMUIH9kSM0Y0swj2g8E_wxh9YSPvErsv7KuOZFfIqITAZ0DiGUuF9G0UCHbhpJj0dNhzRmqlKjCvadeNLtRPLcPBCsqi2-GW7ADnQuW_Lf60gD47ACmWEOo8HtvnRntE3CSo_BFBjVISrKrKFlJBFFEs0M8MS04TzMtMS2xZbN_RgkN_bhmDrG4HL6Y6npgP1c3WcFRTafYh4GJ6SkaqnKaFcQHUeRg",
+        Authorization: CompanyToken,
       },
     };
 
@@ -33,6 +32,14 @@ const Home = () => {
       })
       .catch(function (error) {
         console.log(error);
+        //
+        const elements = document.querySelectorAll(
+          ".btn-category,.top-brand-2,.number-item,.sale-tag,.bg-brand-2"
+        );
+        elements.forEach((element) => {
+          element.style.backgroundColor = "green";
+        });
+        //
       });
   }, []);
 
