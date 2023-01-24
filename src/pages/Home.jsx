@@ -14,41 +14,63 @@ import TopBrands from "../components/TopBrands";
 import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
-  var CompanyToken =
-    "Bearer bZtncs_05yfrWsVgLIlmP1QhgMcrWEzbok0yC7Bz2wsnI3C-La07N7ecsQyS0mJjxS81-6nSG-MAD4ceURmMr1TqBKWCG7sko0XSFm3WK7u-s_1O4KUwtx89CuP3XF-UpuqAPqQjtnoscet5jYdH5M9CmjRHJpUTN3UyVp2-PD2z3-6Ffg1GWmNac7qnzUUY4DSdwfQfPXTF6CH6jWB748OoVTJG2okxYy7PhyevS8x8ezkf3JuGIF42XQMrChl4CXtMVakufBVot4bNTmXCD-nWTTlMzqDnNnLi6zWPErUuM850DUTJWPYVyW2cckJHH6zYMeJUlKiC-wqeRkWMfprqQv3wx_EJR1t3eWKRvAKQx62kYy6XtD3Pp-fEKqp4-YJq2r5HJF0oKXcEKWQTV1f6GFVVzAjMZo_GZ3_DBWU";
-  var APIURL = "https://countydevapi.genial365.com/";
-  useEffect(() => {
-    var config = {
-      method: "get",
-      url: `${APIURL}api/e_web_info/GetWebisteInfoWebConfig`,
-      headers: {
-        Authorization: CompanyToken,
-      },
-    };
+  // var CompanyToken =
+  //   "Bearer fjBYav0bCKsg0CbBd26N1kpUwaARujCegY9u5KYdLP0ucY2n5nzndvk-2Z6lb1fGfYAgBVqdmvkjfnCMqCEbWpAatt38Tm_G1sJTo7BuJR1CwVdWFZ3qkZDwarHHRaLemCikTg46U64zYvDetK1QLkl9JBXJYUEonuYGtvCkjonklUHBeLQCBTVa_EgpSwXoed3AMlAOMs7KnBEZd7J6JTBvqmOHFkRvfXn1suRn0XI5-PT2KQOZowO98XOyHDAJh8XIz2SBQ8BNR0wVv78Lch2Wj0FPqIdJXjc4y5VWmNg2SGx-kOJPQlMRdcvtDl6ScViIQq1mp1103GxrHF82LXtJls94MZYFIOOdBznbIb1aQG0y8z-PbrpGRtmA6Qi0w48sYACqJ6vnaDInqLcA_p6gLbBUTGS5oEzFXv0R7gQ";
+  // var APIURL = "https://countydevapi.genial365.com/";
+  // useEffect(() => {
+  //   var config = {
+  //     method: "get",
+  //     url: `${APIURL}api/e_web_info/GetWebisteInfoWebConfig`,
+  //     headers: {
+  //       Authorization: CompanyToken,
+  //     },
+  //   };
 
-    axios(config)
-      .then(function (response) {
-        console.log(JSON.stringify(response.data));
-      })
-      .catch(function (error) {
-        console.log(error);
-        //
-        // const elements = document.querySelectorAll(
-        //   ".btn-category,.top-brand-2,.number-item,.sale-tag,.bg-brand-2,.btn-brand-2"
-        // );
-        // elements.forEach((element) => {
-        //   element.style.backgroundColor = "green";
-        // });
-        // const shopText = document.querySelectorAll(
-        //   ".btn-link-brand-2"
-        // );
-        // shopText.forEach((element) => {
-        //   element.style.color = "green";
-        // });
+  //   axios(config)
+  //     .then(function (response) {
+  //       console.log(JSON.stringify(response.data));
+  //       // setting primary and secondary color based on API response
+  //       const topBrandBg = document.querySelectorAll(".top-brand-2");
+  //       topBrandBg.forEach((topBrandBg) => {
+  //       topBrandBg.style.backgroundColor = response.data.secondary_color;
+  //       });
+  //       const textTopBrand = document.querySelectorAll(".nav-small");
+  //       textTopBrand.forEach((textTopBrand) => {
+  //         textTopBrand.addEventListener("mouseover", (event) => {
+  //           event.target.style.color = response.data.primary_color;
+  //         });
+  //         textTopBrand.addEventListener("mouseout", (event) => {
+  //           event.target.style.color = "#ffffff";
+  //         });
+  //       });
+  //       const elements = document.querySelectorAll(
+  //         ".btn-category,.number-item,.sale-tag,.bg-brand-2,.btn-brand-2"
+  //       );
+  //       elements.forEach((element) => {
+  //         element.style.backgroundColor = response.data.primary_color;
+  //       });
+        
+  //       const hoverEle = document.querySelectorAll(".sub-menu,.main-menu ");
+  //       hoverEle.forEach((element) => {
+  //         element.addEventListener("mouseover", (event) => {
+          
+  //           event.target.style.color = response.data.primary_color;
+  //         });
+  //         element.addEventListener("mouseout", (event) => {
+  //           // event.target.style.backgroundColor = '';
+  //           event.target.style.color = "#425A8B";
+  //         });
+  //       });
 
-        //
-      });
-  }, []);
+  //       const shopText = document.querySelectorAll(".btn-link-brand-2");
+  //       shopText.forEach((element) => {
+  //         element.style.color = response.data.primary_color;
+  //       });
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <>

@@ -340,12 +340,25 @@ const Header = () => {
                           </span>
                         </a>
 
-                        <ul className="sub-menu">
-                          <li>
+                        <ul className="sub-menu ">
+                          <li className="has-children">
                             <a href="#">Men</a>
+                            
+                        <ul className="has-sub-menu">
+                          <li>
+                            <a href="#">Shirts</a>
+                          </li>
+                          
+                        </ul>
                           </li>
                           <li>
                             <a href="#">Women </a>
+                            <ul className="has-sub-menu">
+                          <li>
+                            <a href="#">makeup</a>
+                          </li>
+                          
+                        </ul>
                           </li>
                           <li>
                             <a href="#">Kids</a>
