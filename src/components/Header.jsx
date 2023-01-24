@@ -341,7 +341,7 @@ const Header = () => {
                         </a>
 
                         <ul className="sub-menu ">
-                          <li className="has-children">
+                          <li>
                             <a href="#">Men</a>
                             
                         <ul className="has-sub-menu">
