@@ -33,12 +33,19 @@ const Home = () => {
       .catch(function (error) {
         console.log(error);
         //
-        const elements = document.querySelectorAll(
-          ".btn-category,.top-brand-2,.number-item,.sale-tag,.bg-brand-2"
-        );
-        elements.forEach((element) => {
-          element.style.backgroundColor = "green";
-        });
+        // const elements = document.querySelectorAll(
+        //   ".btn-category,.top-brand-2,.number-item,.sale-tag,.bg-brand-2,.btn-brand-2"
+        // );
+        // elements.forEach((element) => {
+        //   element.style.backgroundColor = "green";
+        // });
+        // const shopText = document.querySelectorAll(
+        //   ".btn-link-brand-2"
+        // );
+        // shopText.forEach((element) => {
+        //   element.style.color = "green";
+        // });
+
         //
       });
   }, []);
