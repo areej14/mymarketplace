@@ -4325,6 +4325,17 @@ a.text-brand-3:hover {
   min-height: 100%;
 }
 /*  */
+.dropdown .menu-texts.menu-close > li> .sub-menu >li.has-children >a {
+  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
+}
+.sub-menu  > li.has-children > a {
+  padding-right: 30px;
+  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
+}
+.sub-menu  > li.has-children > a:hover, .sub-menu > li.has-children > a.active {
+  color: #0BA9ED;
+  background: url(../imgs/template/icons/arrow-gray-hover.svg) no-repeat right 20px center;
+}
 .menu-texts li .sub-menu   .has-sub-menu{
   display: none;
 }

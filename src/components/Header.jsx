@@ -341,21 +341,27 @@ const Header = () => {
                         </a>
 
                         <ul className="sub-menu ">
-                          <li>
+                          <li className="has-children">
                             <a href="#">Men</a>
                             
                         <ul className="has-sub-menu">
                           <li>
                             <a href="#">Shirts</a>
                           </li>
+                          <li>
+                            <a href="#">Wallets</a>
+                          </li>
                           
                         </ul>
                           </li>
-                          <li>
+                          <li className="has-children">
                             <a href="#">Women </a>
                             <ul className="has-sub-menu">
                           <li>
-                            <a href="#">makeup</a>
+                            <a href="#">Makeup</a>
+                          </li>
+                          <li>
+                            <a href="#">Jewellery</a>
                           </li>
                           
                         </ul>
