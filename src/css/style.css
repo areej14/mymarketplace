@@ -4328,15 +4328,7 @@ a.text-brand-3:hover {
 .dropdown .menu-texts.menu-close > li> .sub-menu >li.has-children >a {
   background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
 }
-.sub-menu  > li.has-children > a {
-  padding-right: 30px;
-  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
-}
-.sub-menu  > li.has-children > a:hover, .sub-menu > li.has-children > a.active {
-  color: #0BA9ED;
-  background: url(../imgs/template/icons/arrow-gray-hover.svg) no-repeat right 20px center;
-}
-.menu-texts li .sub-menu   .has-sub-menu{
+.menu-texts li .sub-menu .has-sub-menu{
   display: none;
 }
 .menu-texts li:hover .sub-menu li:hover .has-sub-menu, .menu-texts li.submenu-open .sub-menu .has-sub-menu{
@@ -4354,26 +4346,16 @@ a.text-brand-3:hover {
   padding-bottom: 10px;
   min-height: 100%;
 }
-/* .has-sub-menu {
-  display: none;
+
+.sub-menu  > li.has-children > a {
+  padding-right: 30px;
+  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
 }
-    
-.sub-menu:hover .has-sub-menu{
-  display: block;
-  color: red;
-  position: absolute;
-  top: 0px;
-  left: 100%;
-  min-width: 250px;
-  height: auto;
-  background-color: #ffffff;
-  border-left: 1px solid #D5DFE4;
-  border-right: 1px solid #D5DFE4;
-  border-bottom: 1px solid #D5DFE4;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  min-height: 100%;
-} */
+.sub-menu  > li.has-children > a:hover, .sub-menu > li.has-children > a.active {
+  color: #0BA9ED;
+  background: url(../imgs/template/icons/arrow-gray-hover.svg) no-repeat right 20px center;
+}
+
 /*  */
 .menu-texts li:hover .sub-menu li a, .menu-texts li.submenu-open .sub-menu li a {
   font-weight: 400;
