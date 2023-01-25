@@ -4,6 +4,7 @@ import France from "../imgs/template/flag-fr.svg";
 import Portugal from "../imgs/template/flag-pt.svg";
 import Espa from "../imgs/template/flag-es.svg";
 import china from "../imgs/template/flag-cn.svg";
+import { Link } from "react-router-dom";
 const Topbar = () => {
   return (
     <div className="topbar top-brand-2">
@@ -11,9 +12,10 @@ const Topbar = () => {
         <div className="menu-topbar-left d-none d-xl-block">
           <ul className="nav-small">
             <li>
-              <a className="font-xs" href="page-about-us.html">
+           
+              <Link className="font-xs" to={`/About-us`}>
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
               <a className="font-xs" href="page-careers.html">

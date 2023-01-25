@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import Banner from "../Homecomponents/Banner";
-import BestSeller from "../Homecomponents/BestSeller";
-import BrandList from "../Homecomponents/BrandList";
-import CategoriesSection from "../Homecomponents/CategoriesSection";
-import DealsSection from "../Homecomponents/DealsSection";
-import Footer from "../Homecomponents/Footer";
-import Header from "../Homecomponents/Header";
-import InfoSection from "../Homecomponents/InfoSection";
-import Loader from "../Homecomponents/Loader";
-import Topbar from "../Homecomponents/Topbar";
-import TopBrands from "../Homecomponents/TopBrands";
+import Banner from "../HomeComponents/Banner";
+import BestSeller from "../HomeComponents/BestSeller";
+import BrandList from "../HomeComponents/BrandList";
+import CategoriesSection from "../HomeComponents/CategoriesSection";
+import DealsSection from "../HomeComponents/DealsSection";
+import Footer from "../HomeComponents/Footer";
+import Header from "../HomeComponents/Header";
+import InfoSection from "../HomeComponents/InfoSection";
+import Loader from "../HomeComponents/Loader";
+import Topbar from "../HomeComponents/Topbar";
+import TopBrands from "../HomeComponents/TopBrands";
 import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {

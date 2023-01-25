@@ -6,6 +6,7 @@ import logo from "../imgs/template/logo.svg";
 import cart from "../imgs/page/homepage1/imgsp4.png";
 import account from "../imgs/template/ava_1.png";
 import Select from "react-select";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [toggleClass, setToggleClass] = useState(false);
   const [expandList, setExpandList] = useState(false);
@@ -115,9 +116,9 @@ const Header = () => {
           <div className="main-header">
             <div className="header-left">
               <div className="header-logo">
-                <a href="#">
+                <Link to={`/`}>
                   <img alt="Ecom" src={favicon} />
-                </a>
+                </Link>
               </div>
               <div className="header-search">
                 <div className="box-header-search">
@@ -147,9 +148,9 @@ const Header = () => {
                 <nav className="nav-main-menu d-none d-xl-block">
                   <ul className="main-menu">
                     <li>
-                      <a className="active" href="#">
+                      <Link className="active" to={`/`}>
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a href="page-about-us.html">About</a>
@@ -328,9 +329,11 @@ const Header = () => {
                 data-bs-popper="static"
               >
                 <div className="container">
-                  <div className="sidebar-left">
-                    <ul className="menu-texts menu-close">
-                      <li className="has-children" >
+                  <div className="sidebar-left" >
+                    <ul className="menu-texts menu-close" 
+                    // style={{minWidth:'250px'}}
+                    >
+                      <li className="has-children"  >
                         <a href="javascript:;">
                           <span className="img-link">
                             <img src={monitor} alt="Ecom" />
