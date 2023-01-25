@@ -330,7 +330,7 @@ const Header = () => {
                 <div className="container">
                   <div className="sidebar-left">
                     <ul className="menu-texts menu-close">
-                      <li className="has-children">
+                      <li className="has-children" >
                         <a href="javascript:;">
                           <span className="img-link">
                             <img src={monitor} alt="Ecom" />
@@ -340,11 +340,11 @@ const Header = () => {
                           </span>
                         </a>
 
-                        <ul className="sub-menu ">
-                          <li className="has-children">
-                            <a href="#">Men</a>
+                        <ul className="sub-menu" style={{paddingRight:'0' }}>
+                          <li className="has-children"   >
+                            <a href="#" >Men</a>
                             
-                        <ul className="has-sub-menu">
+                        <ul className="has-sub-menu" >
                           <li>
                             <a href="#">Shirts</a>
                           </li>

@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import Banner from "../components/Banner";
-import BestSeller from "../components/BestSeller";
-import BrandList from "../components/BrandList";
-import CategoriesSection from "../components/CategoriesSection";
-import DealsSection from "../components/DealsSection";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import InfoSection from "../components/InfoSection";
-import Loader from "../components/Loader";
-import Topbar from "../components/Topbar";
-import TopBrands from "../components/TopBrands";
+import Banner from "../Homecomponents/Banner";
+import BestSeller from "../Homecomponents/BestSeller";
+import BrandList from "../Homecomponents/BrandList";
+import CategoriesSection from "../Homecomponents/CategoriesSection";
+import DealsSection from "../Homecomponents/DealsSection";
+import Footer from "../Homecomponents/Footer";
+import Header from "../Homecomponents/Header";
+import InfoSection from "../Homecomponents/InfoSection";
+import Loader from "../Homecomponents/Loader";
+import Topbar from "../Homecomponents/Topbar";
+import TopBrands from "../Homecomponents/TopBrands";
 import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
@@ -87,7 +87,7 @@ const Home = () => {
 
       <Topbar />
       <Header />
-      <main class="main">
+      <main className="main">
         <DealsSection />
         <InfoSection />
         <CategoriesSection />

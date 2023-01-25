@@ -78,7 +78,45 @@ header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
   background-color: #ffffff;
 }
 }
+/* 3rd layer options in sidebar  */
+.dropdown .menu-texts.menu-close > li> .sub-menu >li.has-children >a {
+  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
+}
+.has-sub-menu{
+  display: none;
+}
+.menu-texts li .sub-menu li:hover .has-sub-menu, .menu-texts li.submenu-open .sub-menu .has-sub-menu{
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  min-width: 170px;
+  height: auto;
+  background-color: #ffffff;
+  border-left: 1px solid #D5DFE4;
+  border-right: 1px solid #D5DFE4;
+  border-bottom: 1px solid #D5DFE4;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  min-height: 100%;
+}
 
+.sub-menu  > li.has-children > a {
+  padding-right: 30px;
+  background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
+}
+.sub-menu  > li.has-children > a:hover, .sub-menu > li.has-children > a.active {
+  color: #0BA9ED;
+  background: url(../imgs/template/icons/arrow-gray-hover.svg) no-repeat right 20px center;
+}
+
+/*  */
+/* change width od 2nd layer in sidebar */
+.menu-texts li:hover .sub-menu, .menu-texts li.submenu-open .sub-menu {
+ 
+  min-width: 150px;
+ 
+}
 @media All and (max-width: 1199px) {
   #wdw_NavBar .wdw_FixedManu {
     top: 158px;
@@ -96,6 +134,22 @@ header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
     top: 119px;
   }
 }
+/* @media All and (max-width: 956px) {
+
+  .menu-texts li:hover .sub-menu, .menu-texts li.submenu-open .sub-menu {
+ 
+    min-width: 140px;
+   
+  }
+  .menu-texts li .sub-menu li:hover .has-sub-menu, .menu-texts li.submenu-open .sub-menu .has-sub-menu{
+   
+    min-width: 140px;
+    
+  } */
+  /* .menu-texts{
+    min-width: 100px;
+  } */
+/* } */
 
 @media All and (max-width: 576px) {
   #wdw_NavBar .wdw_FixedManu {
@@ -104,4 +158,5 @@ header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
   header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
     top: 119px;
   }
+ 
 }
