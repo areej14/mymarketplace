@@ -4342,7 +4342,8 @@ a.text-brand-3:hover {
   background: url(../imgs/template/icons/arrow-gray-hover.svg) no-repeat right 20px center;
 }
 .menu-texts.menu-close {
-  min-width: auto;
+  /* min-width: auto; */
+  min-width: 250px;
   border: 0;
 }
 .menu-texts.menu-close li.has-children a {
@@ -6803,10 +6804,12 @@ a.text-brand-3:hover {
 }
 
 .dropdown .menu-texts.menu-close {
-  min-width: 320px;
+  /* min-width: 320px; */
+  min-width: 250px;
 }
 .dropdown .dropdown-menu {
-  width: auto;
+  /* width: auto; */
+  width: 250px;
 }
 .dropdown .menu-texts.menu-close > li.has-children > a {
   background: url(../imgs/template/icons/arrow-gray.svg) no-repeat right 20px center;
@@ -10261,7 +10264,8 @@ a:hover span {
     display: block;
   }
   .dropdown .sidebar-left .menu-texts.menu-close {
-    min-width: 320px;
+    /* min-width: 320px; */
+    min-width: 250px;
   }
   .box-info-vendor .avarta .btn-buy {
     padding-left: 5px;
@@ -10614,6 +10618,8 @@ a:hover span {
   }
   .dropdown .sidebar-left .menu-texts.menu-close {
     min-width: auto;
+    
+     /* min-width: 250px; */
   }
   .dropdown .sidebar-left .menu-texts.menu-close li a .text-link {
     display: none;
