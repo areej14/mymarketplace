@@ -153,7 +153,7 @@ const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <a href="page-about-us.html">About</a>
+                      <Link to={`/About-us`}>About</Link>
                     </li>
                     <li>
                       <a href="page-contact.html">Contact</a>
@@ -668,9 +668,9 @@ const Header = () => {
                 <nav className="mt-15">
                   <ul className="mobile-menu font-heading">
                     <li className="has-children">
-                      <a className="active" href="index.html">
+                    <Link className="active" to={`/`}>
                         Home
-                      </a>
+                      </Link>
                       {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
                       {/* <ul className="sub-menu"></ul> */}
                     </li>
@@ -726,7 +726,7 @@ const Header = () => {
                       </ul> */}
                     </li>
                     <li>
-                      <a href="page-about-us.html">About</a>
+                    <Link to={`/About-us`}>About</Link>
                     </li>
                     <li>
                       <a href="page-contact.html">Contact</a>
