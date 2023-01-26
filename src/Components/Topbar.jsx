@@ -23,9 +23,9 @@ const Topbar = () => {
               </a>
             </li>
             <li>
-              <a className="font-xs" href="page-register.html">
+              <Link className="font-xs" to={`/Register`}>
                 Open a shop
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

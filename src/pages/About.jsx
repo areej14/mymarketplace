@@ -1,16 +1,16 @@
 import React from 'react'
-import Footer from "../HomeComponents/Footer";
-import Header from "../HomeComponents/Header";
-import Loader from "../HomeComponents/Loader";
-import Topbar from "../HomeComponents/Topbar";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
+import Loader from "../Components/Loader";
+import Topbar from "../Components/Topbar";
 import ScrollToTop from "react-scroll-to-top";
-import InfoSection from '../HomeComponents/InfoSection';
+import InfoSection from '../Components/InfoSection';
 import aboutImg from '../imgs/page/about/img.png'
 import team from '../imgs/page/about/staft6.png'
-import BrandList from '../HomeComponents/BrandList';
+import BrandList from '../Components/BrandList';
 import { Link } from "react-router-dom";
-import StoreInfo from '../HomeComponents/StoreInfo';
-import ContactInfo from '../HomeComponents/ContactInfo';
+import StoreInfo from '../Components/StoreInfo';
+import ContactInfo from '../Components/ContactInfo';
 export const About = () => {
   return (
     <>
@@ -33,7 +33,6 @@ export const About = () => {
           <div className="container">
             <ul className="breadcrumb">
               <li><Link className="font-xs color-gray-1000" to={`/`}>Home</Link></li>
-              <li><Link className="font-xs color-gray-500" to={`/`}>Pages</Link></li>
               <li><Link className="font-xs color-gray-500" to={`/About-us`}>About Us</Link></li>
             </ul>
           </div>

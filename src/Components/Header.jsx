@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [toggleClass, setToggleClass] = useState(false);
   const [expandList, setExpandList] = useState(false);
+  const [expandAccount, setExpandAccount] = useState(false);
   const myRef = useRef();
   const customStyles = {
     indicatorSeparator: () => {},
@@ -61,6 +62,9 @@ const Header = () => {
       // }
     }),
   };
+  const AccountDropdown=()=>{
+    setExpandAccount(!expandAccount)
+  }
   const options = [
     { value: " Clothing & Apparel", label: " Clothing & Apparel" },
     { value: "Footwear/Shoes", label: "Footwear/Shoes" },
@@ -93,6 +97,7 @@ const Header = () => {
    const handleClickOutside = (e) => {
     if (!myRef.current.contains(e.target)) {
       setToggleClass(false);
+      setExpandAccount(false)
     }
   };
   /* Method that will fix header after a specific scrollable */
@@ -104,6 +109,7 @@ const Header = () => {
       : header.classList.remove("stick");
   };
   const navTrigger = () => {
+    setExpandAccount(false)
     setToggleClass(!toggleClass);
   };
   const expand = () => {
@@ -156,7 +162,7 @@ const Header = () => {
                       <Link to={`/About-us`}>About</Link>
                     </li>
                     <li>
-                      <a href="page-contact.html">Contact</a>
+                      <Link to={`/Contact-us`}>Contact</Link>
                     </li>
                     <li className="has-children">
                       <a href="shop-vendor-list.html">Vendors</a>
@@ -185,10 +191,12 @@ const Header = () => {
               </div>
               <div className="header-shop">
                 <div className="d-inline-block box-dropdown-cart">
-                  <span className="font-lg icon-list icon-account">
+                  <span className="font-lg icon-list icon-account" onClick={AccountDropdown}>
                     <span>Account</span>
                   </span>
-                  <div className="dropdown-account">
+                  
+                  <div className={`${expandAccount && "dropdown-account dropdown-open" || "dropdown-account"} `}
+                 >
                     <ul>
                       <li>
                         <a href="page-account.html">My Account</a>
@@ -206,10 +214,11 @@ const Header = () => {
                         <a href="page-account.html">Setting</a>
                       </li>
                       <li>
-                        <a href="page-login.html">Sign out</a>
+                        <Link to={`/Login`}>Sign out</Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> 
+                  
                 </div>
                 <a
                   className="font-lg icon-list icon-wishlist"
@@ -312,6 +321,7 @@ const Header = () => {
           <div className="container">
             <div className="dropdown d-inline-block">
               <button
+              style={{backgroundColor:'#FD9636'}}
                 className="btn dropdown-toggle btn-category"
                 id="dropdownCategory"
                 type="button"
@@ -320,7 +330,7 @@ const Header = () => {
                 data-bs-display="static"
               >
                 <span className="dropdown-right font-sm-bold color-white">
-                  Shop ByCategories
+                  Shop By Categories
                 </span>
               </button>
               <div
@@ -671,12 +681,12 @@ const Header = () => {
                     <Link className="active" to={`/`}>
                         Home
                       </Link>
-                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
+                      {/* <span className="menu-expand"><i className="fi-rr-caret-down"></i></span> */}
                       {/* <ul className="sub-menu"></ul> */}
                     </li>
                     <li className="has-children">
                       <a href="shop-grid.html">Shop</a>
-                      {/* <span class="menu-expand"><i class="fi-rr-caret-down"></i></span> */}
+                      {/* <span className="menu-expand"><i className="fi-rr-caret-down"></i></span> */}
                       {/* <ul className="sub-menu">
                         <li >
                           <a href="shop-grid.html">Shop Grid</a>
@@ -729,12 +739,12 @@ const Header = () => {
                     <Link to={`/About-us`}>About</Link>
                     </li>
                     <li>
-                      <a href="page-contact.html">Contact</a>
+                      <Link to={`/Contact-us`}>Contact</Link>
                     </li>
-                    <li class={`has-children ${expandList ? "active" : ""}`}>
+                    <li className={`has-children ${expandList ? "active" : ""}`}>
                       <a href="shop-vendor-list.html">Vendors</a>
-                      <span class="menu-expand" onClick={expand}>
-                        <i class="fi-rr-caret-down"></i>
+                      <span className="menu-expand" onClick={expand}>
+                        <i className="fi-rr-caret-down"></i>
                       </span>
                       {expandList && (
                         <ul className="sub-menu">
@@ -819,7 +829,7 @@ const Header = () => {
                     <a href="page-account.html">Setting</a>
                   </li>
                   <li>
-                    <a href="page-login.html">Sign out</a>
+                    <Link to={`/Login`}>Sign out</Link>
                   </li>
                 </ul>
               </div>
