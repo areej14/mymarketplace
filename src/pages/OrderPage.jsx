@@ -5,13 +5,23 @@ import Header from "../Components/Header";
 import ScrollToTop from "react-scroll-to-top";
 import Footer from '../Components/Footer';
 import Orders from '../Components/Orders';
+import { Link } from 'react-router-dom';
 
+// import ScrollAnimationItem from 'react-scroll-fade-animation';
 const OrderPage = () => {
   return (
     <>
       <Loader/>
+      {/* <ScrollAnimationItem
+    path={'top'}
+    offsetHeight={-400}
+  >
+    Its toppppppppppppppppppppp
+  </ScrollAnimationItem> */}
       <ScrollToTop
+      className='animate__animated animate__fadeInUp'
         smooth={true}
+        showUnder={900}
         color="white"
         viewBox="0 0 16 16"
         width="22"
@@ -22,7 +32,18 @@ const OrderPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-      <div className="container pt-30">
+      <div className="section-box">
+        <div className="breadcrumbs-div">
+          <div className="container">
+            <ul className="breadcrumb">
+            <li><Link className="font-xs color-gray-1000" to={`/`}>Home</Link></li>
+              <li><Link className="font-xs color-gray-500" to={`/Account`}>Account</Link></li>
+              <li><Link className="font-xs color-gray-500" to={`/MyOrders`}>Order</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container pt-10">
       <div className="col-10 "> 
 <Orders styleClass={"tab-pane fade active show"} />
 </div>

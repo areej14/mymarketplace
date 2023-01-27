@@ -3,120 +3,120 @@ import React from 'react'
 const Settings = (props) => {
   const {styleClass}=props
   return (
-    <div class={styleClass} id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
-                <div class="row">
-                  <div class="col-lg-6 mb-20">
+    <div className={styleClass} id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
+                <div className="row">
+                  <div className="col-lg-6 mb-20">
                     <form action="#" method="get">
-                      <div class="row">
-                        <div class="col-lg-12 mb-20">
-                          <h5 class="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
+                      <div className="row">
+                        <div className="col-lg-12 mb-20">
+                          <h5 className="font-md-bold color-brand-3 text-sm-start text-center">Contact information</h5>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Fullname *" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Fullname *" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Username *" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Username *" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Phone Number *" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Phone Number *" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Email *" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Email *" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <label class="font-sm color-brand-3" for="checkboxOffers">
-                              <input class="checkboxOffer" id="checkboxOffers" type="checkbox" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <label className="font-sm color-brand-3" for="checkboxOffers">
+                              <input className="checkboxOffer" id="checkboxOffers" type="checkbox" />
                               Keep me up to date on news and exclusive offers
                             </label>
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <h5 class="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
+                        <div className="col-lg-12">
+                          <h5 className="font-md-bold color-brand-3 mt-15 mb-20">Shipping address</h5>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="First name*" />
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="First name*" />
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Last name*" />
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Last name*" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Address 1*" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Address 1*" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Address 2*" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Address 2*" />
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <select class="form-control font-sm select-style1 color-gray-700">
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <select className="form-control font-sm select-style1 color-gray-700">
                               <option value="">Select an option...</option>
                               <option value="1">Option 1</option>
                             </select>
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="City*" />
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="City*" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="PostCode / ZIP*" />
+                        <div className="col-lg-12">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="PostCode / ZIP*" />
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Company name" />
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Company name" />
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input class="form-control font-sm" type="text" placeholder="Phone*" />
+                        <div className="col-lg-6">
+                          <div className="form-group">
+                            <input className="form-control font-sm" type="text" placeholder="Phone*" />
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group mb-0">
-                            <textarea class="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
+                        <div className="col-lg-12">
+                          <div className="form-group mb-0">
+                            <textarea className="form-control font-sm" placeholder="Additional Information" rows="5"></textarea>
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group mt-20">
-                            <input class="btn btn-buy w-auto h54 font-md-bold" value="Save change" />
+                        <div className="col-lg-12">
+                          <div className="form-group mt-20">
+                            <input className="btn btn-buy w-auto h54 font-md-bold" value="Save change" />
                           </div>
                         </div>
                       </div>
                     </form>
                   </div>
-                  <div class="col-lg-1 mb-20"></div>
-                  <div class="col-lg-5 mb-20">
-                    <div class="mt-40">
-                      <h4 class="mb-10">Steven Job</h4>
-                      <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Home Address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
+                  <div className="col-lg-1 mb-20"></div>
+                  <div className="col-lg-5 mb-20">
+                    <div className="mt-40">
+                      <h4 className="mb-10">Steven Job</h4>
+                      <div className="mb-10">
+                        <p className="font-sm color-brand-3 font-medium">Home Address:</p><span className="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
                       </div>
-                      <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Delivery address:</p><span class="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
+                      <div className="mb-10">
+                        <p className="font-sm color-brand-3 font-medium">Delivery address:</p><span className="font-sm color-gray-500 font-medium">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA</span>
                       </div>
-                      <div class="mb-10">
-                        <p class="font-sm color-brand-3 font-medium">Phone Number:</p><span class="font-sm color-gray-500 font-medium">(+01) 234 567 89 - (+01) 688 866 99</span>
+                      <div className="mb-10">
+                        <p className="font-sm color-brand-3 font-medium">Phone Number:</p><span className="font-sm color-gray-500 font-medium">(+01) 234 567 89 - (+01) 688 866 99</span>
                       </div>
-                      <div class="mb-10 mt-15"><a class="btn btn-cart w-auto">Set as Default</a></div>
+                      <div className="mb-10 mt-15"><a className="btn btn-cart w-auto">Set as Default</a></div>
                     </div>
                   </div>
                 </div>

@@ -11,7 +11,10 @@ const Header = () => {
   const [toggleClass, setToggleClass] = useState(false);
   const [expandList, setExpandList] = useState(false);
   const [expandAccount, setExpandAccount] = useState(false);
+  // for account logo expand
   const myRef = useRef();
+  // for mobile view menu 
+  const myRef2 = useRef();
   const customStyles = {
     indicatorSeparator: () => {},
     placeholder: (defaultStyles) => {
@@ -95,9 +98,12 @@ const Header = () => {
     };
   });
    const handleClickOutside = (e) => {
-    if (!myRef.current.contains(e.target)) {
-      setToggleClass(false);
+   
+    if ((!myRef.current.contains(e.target)) ) {    
       setExpandAccount(false)
+    }
+    if ( (!myRef2.current.contains(e.target))) {
+      setToggleClass(false);
     }
   };
   /* Method that will fix header after a specific scrollable */
@@ -116,7 +122,7 @@ const Header = () => {
     setExpandList(!expandList);
   };
   return (
-    <div ref={myRef}>
+    <div >
       <header className="header header-container sticky-bar">
         <div className="container">
           <div className="main-header">
@@ -165,11 +171,11 @@ const Header = () => {
                       <Link to={`/Contact-us`}>Contact</Link>
                     </li>
                     <li className="has-children">
-                      <a href="shop-vendor-list.html">Vendors</a>
+                      <Link to={`/VendorList`}>Vendors</Link>
 
                       <ul className="sub-menu">
                         <li>
-                          <a href="shop-vendor-list.html">Vendors Listing</a>
+                          <Link to={`/VendorList`}>Vendors Listing</Link>
                         </li>
                         <li>
                           <a href="shop-vendor-single.html">Vendor Single</a>
@@ -189,15 +195,15 @@ const Header = () => {
                   <span className="burger-icon-bottom"></span>
                 </div>
               </div>
-              <div className="header-shop">
-                <div className="d-inline-block box-dropdown-cart">
+              <div className="header-shop" >
+                <div className="d-inline-block box-dropdown-cart" >
                   <span className="font-lg icon-list icon-account" onClick={AccountDropdown}>
                     <span>Account</span>
                   </span>
                   
-                  <div className={`${expandAccount && "dropdown-account dropdown-open" || "dropdown-account"} `}
+                  <div   className={`${expandAccount && "dropdown-account dropdown-open" || "dropdown-account"} `}
                  >
-                    <ul>
+                    <ul ref={myRef}>
                       <li>
                         <Link to={`/Account`}>My Account</Link>
                       </li>
@@ -228,23 +234,23 @@ const Header = () => {
                   <span className="number-item font-xs">5</span>
                 </Link>
                 <div className="d-inline-block box-dropdown-cart">
-                  <span className="font-lg icon-list icon-cart">
-                    <span>Cart</span>
+                  <Link to={`/Cart`} className="font-lg icon-list icon-cart">
+                   <span>Cart</span>
                     <span className="number-item font-xs">2</span>
-                  </span>
+                  </Link>
                   <div className="dropdown-cart">
-                    <div className="item-cart mb-20">
+                    {/* <div className="item-cart mb-20">
                       <div className="cart-image">
                         <img src={ecomImg} alt="Ecom" />
                       </div>
                       <div className="cart-info">
-                        <a
+                        <Link
                           className="font-sm-bold color-brand-3"
-                          href="shop-single-product.html"
+                          to="shop-single-product.html"
                         >
                           2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB
                           SSD
-                        </a>
+                        </Link>
                         <p>
                           <span className="color-brand-2 font-sm-bold">
                             1 x $2856.4
@@ -303,7 +309,7 @@ const Header = () => {
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <a
@@ -661,7 +667,7 @@ const Header = () => {
         {/* <!--===== Update DIV END! =====--> */}
       </header>
       {/*  */}
-      <div
+      <div ref={myRef2}
         className={`${
           toggleClass ? "sidebar-visible" : " "
         } mobile-header-wrapper-style perfect-scrollbar`}
@@ -742,14 +748,14 @@ const Header = () => {
                       <Link to={`/Contact-us`}>Contact</Link>
                     </li>
                     <li className={`has-children ${expandList ? "active" : ""}`}>
-                      <a href="shop-vendor-list.html">Vendors</a>
+                      <Link to={`/VendorList`}>Vendors</Link>
                       <span className="menu-expand" onClick={expand}>
                         <i className="fi-rr-caret-down"></i>
                       </span>
                       {expandList && (
                         <ul className="sub-menu">
                           <li>
-                            <a href="shop-vendor-list.html">Vendors Listing</a>
+                            <Link to={`/VendorList`}>Vendors Listing</Link>
                           </li>
                           <li>
                             <a href="shop-vendor-single.html">Vendor Single</a>

@@ -11,6 +11,8 @@ import OrderPage from './pages/OrderPage';
 import OrederTrackingPage from './pages/OrderTrackingPage';
 import WishListPage from './pages/WishListPage';
 import SettingPage from './pages/SettingPage';
+import Cart from './pages/Cart';
+import VendorListing from './pages/VendorListing';
 function App() {
   const routes = useRoutes(
     [
@@ -24,6 +26,10 @@ function App() {
       {path:'/OrderTracking',element:<OrederTrackingPage/>},
       {path:'/WishList',element:<WishListPage/>},
       {path:'/Settings',element:<SettingPage/>},
+      {path:'/Cart',element:<Cart/>},
+      {path:'/VendorList',element:<VendorListing/>},
+
+
     ]
   )
   return routes;

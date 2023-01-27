@@ -5,6 +5,7 @@ import Header from "../Components/Header";
 import ScrollToTop from "react-scroll-to-top";
 import Footer from '../Components/Footer';
 import Settings from '../Components/Settings';
+import { Link } from 'react-router-dom';
 
 const SettingPage = () => {
   return (
@@ -22,7 +23,18 @@ const SettingPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-      <div className="container pt-30">
+      <div className="section-box">
+        <div className="breadcrumbs-div">
+          <div className="container">
+            <ul className="breadcrumb">
+            <li><Link className="font-xs color-gray-1000" to={`/`}>Home</Link></li>
+              <li><Link className="font-xs color-gray-500" to={`/Account`}>Account</Link></li>
+              <li><Link className="font-xs color-gray-500" to={`/Settings`}>Settings</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container pt-10">
       <div className="col-10"> 
       <Settings styleClass={"tab-pane fade active show"}/>
       </div>
