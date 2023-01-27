@@ -1,8 +1,9 @@
 import React from 'react'
 
-const OrderTracking = () => {
+const OrderTracking = (props) => {
+  const {styleClass}=props
   return (
-    <div class="tab-pane fade" id="tab-order-tracking" role="tabpanel" aria-labelledby="tab-order-tracking">
+    <div class={styleClass}  id="tab-order-tracking" role="tabpanel" aria-labelledby="tab-order-tracking">
                 <p class="font-md color-gray-600">To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on<br class="d-none d-lg-block" />your receipt and in the confirmation email you should have received.</p>
                 <div class="row mt-30">
                   <div class="col-lg-6">

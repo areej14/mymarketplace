@@ -87,10 +87,10 @@ const Account = () => {
                   </ul>
                 </nav>
               </div>
-             <Whishlist/>
-              <Orders/>
-             <OrderTracking/>
-             <Settings/>
+             <Whishlist styleClass={"tab-pane fade"}/>
+              <Orders styleClass={"tab-pane fade"}/>
+             <OrderTracking styleClass={"tab-pane fade"}/>
+             <Settings styleClass={"tab-pane fade"}/>
              
             </div>
           </div>

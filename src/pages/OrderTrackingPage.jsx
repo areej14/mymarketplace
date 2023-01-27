@@ -22,7 +22,11 @@ const OrederTrackingPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-     <OrderTracking/>
+      <div className="container pt-30">
+      <div className="col-10"> 
+     <OrderTracking styleClass={"tab-pane fade active show"}/>
+     </div>
+     </div>
       </main>
       <Footer/>
     </>

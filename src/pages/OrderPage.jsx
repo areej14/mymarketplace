@@ -22,7 +22,11 @@ const OrderPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-<Orders/>
+      <div className="container pt-30">
+      <div className="col-10 "> 
+<Orders styleClass={"tab-pane fade active show"} />
+</div>
+</div>
       </main>
       <Footer/>
     </>

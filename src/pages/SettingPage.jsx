@@ -22,7 +22,13 @@ const SettingPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-   <Settings/>
+      <div className="container pt-30">
+      <div className="col-10"> 
+      <Settings styleClass={"tab-pane fade active show"}/>
+      </div>
+     
+      </div>
+  
       </main>
       <Footer/>
     </>

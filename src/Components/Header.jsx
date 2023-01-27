@@ -85,7 +85,7 @@ const Header = () => {
     { value: "Infant/Baby Products", label: "Infant/Baby Products" },
     { value: "Restaurent", label: "Restaurent" },
   ];
-  // Sticky Menu Area
+  // Sticky Menu Area and handle click outside event
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     document.addEventListener("mousedown", handleClickOutside);
@@ -199,19 +199,19 @@ const Header = () => {
                  >
                     <ul>
                       <li>
-                        <a href="page-account.html">My Account</a>
+                        <Link to={`/Account`}>My Account</Link>
                       </li>
                       <li>
-                        <a href="page-account.html">Order Tracking</a>
+                        <Link to={`/OrderTracking`}>Order Tracking</Link>
                       </li>
                       <li>
-                        <a href="page-account.html">My Orders</a>
+                        <Link to={`/MyOrders`}>My Orders</Link>
                       </li>
                       <li>
-                        <a href="page-account.html">My Wishlist</a>
+                        <Link to={`/WishList`}>My Wishlist</Link>
                       </li>
                       <li>
-                        <a href="page-account.html">Setting</a>
+                        <Link to={`/Settings`}>Setting</Link>
                       </li>
                       <li>
                         <Link to={`/Login`}>Sign out</Link>
@@ -220,13 +220,13 @@ const Header = () => {
                   </div> 
                   
                 </div>
-                <a
+                <Link
                   className="font-lg icon-list icon-wishlist"
-                  href="shop-wishlist.html"
+                  to={`/WishList`}
                 >
                   <span>Wishlist</span>
                   <span className="number-item font-xs">5</span>
-                </a>
+                </Link>
                 <div className="d-inline-block box-dropdown-cart">
                   <span className="font-lg icon-list icon-cart">
                     <span>Cart</span>
@@ -813,21 +813,21 @@ const Header = () => {
                   </div>
                 </div>
                 <ul className="mobile-menu">
-                  <li>
-                    <a href="page-account.html">My Account</a>
-                  </li>
-                  <li>
-                    <a href="page-account.html">Order Tracking</a>
-                  </li>
-                  <li>
-                    <a href="page-account.html">My Orders</a>
-                  </li>
-                  <li>
-                    <a href="page-account.html">My Wishlist</a>
-                  </li>
-                  <li>
-                    <a href="page-account.html">Setting</a>
-                  </li>
+                <li>
+                        <Link to={`/Account`}>My Account</Link>
+                      </li>
+                      <li>
+                        <Link to={`/OrderTracking`}>Order Tracking</Link>
+                      </li>
+                      <li>
+                        <Link to={`/MyOrders`}>My Orders</Link>
+                      </li>
+                      <li>
+                        <Link to={`/WishList`}>My Wishlist</Link>
+                      </li>
+                      <li>
+                        <Link to={`/Settings`}>Setting</Link>
+                      </li>
                   <li>
                     <Link to={`/Login`}>Sign out</Link>
                   </li>

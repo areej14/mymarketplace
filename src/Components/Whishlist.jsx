@@ -1,8 +1,9 @@
 import React from 'react'
 import star from '../imgs/template/icons/star.svg'
-const Whishlist = () => {
+const Whishlist = (props) => {
+  const {styleClass}=props
   return (
-    <div class="tab-pane fade" id="tab-wishlist" role="tabpanel" aria-labelledby="tab-wishlist">
+    <div class={styleClass} id="tab-wishlist" role="tabpanel" aria-labelledby="tab-wishlist">
     <div class="box-wishlist">
       <div class="head-wishlist">
         <div class="item-wishlist">

@@ -22,7 +22,12 @@ const WishListPage = () => {
       <Topbar/>
       <Header />
       <main className="main">
-<Whishlist/>
+      <div className="container pt-30">
+      <div className="col-10"> 
+<Whishlist styleClass={"tab-pane fade active show"}/>
+</div>
+     
+     </div>
       </main>
       <Footer/>
     </>

@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Orders = () => {
+const Orders = (props) => {
+  const {styleClass}=props
   return (
-    <div class="tab-pane fade" id="tab-orders" role="tabpanel" aria-labelledby="tab-orders">
+    <div class={styleClass} id="tab-orders" role="tabpanel" aria-labelledby="tab-orders">
     <div class="box-orders">
       <div class="head-orders">
         <div class="head-left">

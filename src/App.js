@@ -19,7 +19,7 @@ function App() {
       {path:'/Contact-us',element:<Contact/>},
       {path:'/Register',element:<Register/>},
       {path:'/Login',element:<Login/>},
-      {path:'/Order',element:<OrderPage/>},
+      {path:'/MyOrders',element:<OrderPage/>},
       {path:'/Account',element:<Account/>},
       {path:'/OrderTracking',element:<OrederTrackingPage/>},
       {path:'/WishList',element:<WishListPage/>},

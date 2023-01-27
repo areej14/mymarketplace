@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Settings = () => {
+const Settings = (props) => {
+  const {styleClass}=props
   return (
-    <div class="tab-pane fade" id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
+    <div class={styleClass} id="tab-setting" role="tabpanel" aria-labelledby="tab-setting">
                 <div class="row">
                   <div class="col-lg-6 mb-20">
                     <form action="#" method="get">
