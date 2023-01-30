@@ -2864,7 +2864,7 @@ const ShopGrid = () => {
                             minValue={10}
                             maxValue={30}
                             subSteps={false}
-                            style={{ border:'0', boxShadow: "none",color:'white' }}
+                            // style={{ border:'0', boxShadow: "none",color:'white' }}
                             ruler={false}
                             barInnerColor="#FD9636"
                             barLeftColor="white"  

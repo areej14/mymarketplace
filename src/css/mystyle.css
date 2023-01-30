@@ -90,7 +90,7 @@ header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
   position: absolute;
   top: 0px;
   left: 100%;
-  min-width: 170px;
+  min-width: 150px;
   height: auto;
   background-color: #ffffff;
   border-left: 1px solid #D5DFE4;
