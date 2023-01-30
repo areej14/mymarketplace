@@ -2868,7 +2868,7 @@ const ShopGrid = () => {
                             ruler={false}
                             barInnerColor="#FD9636"
                             barLeftColor="white"  
-                              min={0}
+                            min={0}
                             max={100}
                             step={5}
                             label={false}
