@@ -2864,10 +2864,12 @@ const ShopGrid = () => {
                             minValue={10}
                             maxValue={30}
                             subSteps={false}
-                            style={{ border:'0', boxShadow: "none" }}
+                            style={{ border:'0', boxShadow: "none",color:'white' }}
                             ruler={false}
                             barInnerColor="#FD9636"
                             barLeftColor="white"  
+                            thumbLeftColor= "#FD9636"
+                            thumbRightColor= "#FD9636"
                             min={0}
                             max={100}
                             step={5}
