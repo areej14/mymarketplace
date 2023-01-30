@@ -178,7 +178,7 @@ const Header = () => {
                           <Link to={`/VendorList`}>Vendors Listing</Link>
                         </li>
                         <li>
-                          <a href="shop-vendor-single.html">Vendor Single</a>
+                          <Link to={`/SingleVendor`}>Vendor Single</Link>
                         </li>
                       </ul>
                     </li>
@@ -758,7 +758,7 @@ const Header = () => {
                             <Link to={`/VendorList`}>Vendors Listing</Link>
                           </li>
                           <li>
-                            <a href="shop-vendor-single.html">Vendor Single</a>
+                            <Link to={`/SingleVendor`}>Vendor Single</Link>
                           </li>
                         </ul>
                       )}

@@ -13,6 +13,8 @@ import WishListPage from './pages/WishListPage';
 import SettingPage from './pages/SettingPage';
 import Cart from './pages/Cart';
 import VendorListing from './pages/VendorListing';
+import SingleVendor from './pages/SingleVendor';
+import ShopGrid from './pages/ShopGrid';
 function App() {
   const routes = useRoutes(
     [
@@ -28,6 +30,10 @@ function App() {
       {path:'/Settings',element:<SettingPage/>},
       {path:'/Cart',element:<Cart/>},
       {path:'/VendorList',element:<VendorListing/>},
+      {path:'/SingleVendor',element:<SingleVendor/>},
+      {path:'/ShopGrid',element:<ShopGrid/>},
+
+
 
 
     ]

@@ -41,7 +41,7 @@ const VendorListing = () => {
             <div className="col-lg-6 mb-30">
               <p className="font-md color-gray-500">We have<span className="font-md-bold color-brand-3"> 780</span><span> vendors now</span></p>
             </div>
-            <div className="col-lg-6 mb-30 text-end"><a className="font-sm color-gray-900 mr-30" href="#">Support Ticket</a><a className="font-sm color-gray-900 mr-30" href="#">Become an Affilate</a><a className="btn btn-buy w-auto font-sm-bold" href="page-register.html">Open a Shop</a></div>
+            <div className="col-lg-6 mb-30 text-end"><a className="font-sm color-gray-900 mr-30" href="#">Support Ticket</a><a className="font-sm color-gray-900 mr-30" href="#">Become an Affilate</a><Link className="btn btn-buy w-auto font-sm-bold" to={`/Register`}>Open a Shop</Link></div>
           </div>
           <div className="border-bottom pt-0 mb-30"></div>
           <div className="row">
@@ -722,6 +722,7 @@ const VendorListing = () => {
           </div>
         </div>
       </div>
+     
       </main>
       <Footer/>
     </>

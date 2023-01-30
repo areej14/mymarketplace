@@ -6,18 +6,11 @@ import ScrollToTop from "react-scroll-to-top";
 import Footer from '../Components/Footer';
 import Orders from '../Components/Orders';
 import { Link } from 'react-router-dom';
-
-// import ScrollAnimationItem from 'react-scroll-fade-animation';
 const OrderPage = () => {
   return (
     <>
       <Loader/>
-      {/* <ScrollAnimationItem
-    path={'top'}
-    offsetHeight={-400}
-  >
-    Its toppppppppppppppppppppp
-  </ScrollAnimationItem> */}
+ 
       <ScrollToTop
       className='animate__animated animate__fadeInUp'
         smooth={true}
