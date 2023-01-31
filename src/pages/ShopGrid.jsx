@@ -7,7 +7,18 @@ import Footer from "../Components/Footer";
 import InfoSection from "../Components/InfoSection";
 import star from "../imgs/template/icons/star.svg";
 import MultiRangeSlider from "multi-range-slider-react";
+
 const ShopGrid = () => {
+  const customStyles = {
+   border:'0',
+   boxShadow:'none',
+    "&.thumb": (base) => ({
+      ...base,
+      border:'none'
+    }),
+
+   
+  };
   return (
     <>
       <Loader />
@@ -2856,15 +2867,31 @@ const ShopGrid = () => {
                     <div className="box-slider-range mt-20 mb-15">
                       <div class="row mb-20">
                         <div
-                          class="col-sm-12"
-                          
-                        >
-                          {/* <div id="slider-range"></div> */}
-                          <MultiRangeSlider
+                          class="col-sm-12">
+                                {/* <ReactSlider defaultValue={[4,20]}
+                                className="slider"
+                                trackClassName="tracker"
+                                min={0} 
+                                style
+                                max={100}
+                                minDistance={50}
+                                step={50}
+                                pearling={true}
+                                renderThumb={(props)=>{
+                                  return <div {...props} className="thumb"></div>
+                                }}
+                                renderTrack={(props)=>{
+                                  return <div {...props} className="track"></div>
+                                }}
+
+                                /> */}
+                                <MultiRangeSlider
                             minValue={10}
                             maxValue={30}
+                            baseClassName="multi-range-slider"
+          
                             subSteps={false}
-                            style={{ border:'0', boxShadow: "none",color:'white' }}
+                            style={{ border:'0', boxShadow: "none",color:'white',backgroundColor:'white' }}
                             ruler={false}
                             barInnerColor="#FD9636"
                             barLeftColor="white"  
@@ -2874,12 +2901,14 @@ const ShopGrid = () => {
                             max={100}
                             step={5}
                             label={false}
+                            
                             preventWheel={false}
                             onChange={(e) => {
                               // handleInput(e);
                             }}
                             
                           />
+                          
                         </div>
                       </div>
                       <div className="row">
