@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import InfoSection from "../Components/InfoSection";
 import star from "../imgs/template/icons/star.svg";
 import MultiRangeSlider from "multi-range-slider-react";
-
+import '../css/multirangeslider.css'
 const ShopGrid = () => {
   const customStyles = {
    border:'0',

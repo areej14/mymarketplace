@@ -15,6 +15,7 @@ import Cart from './pages/Cart';
 import VendorListing from './pages/VendorListing';
 import SingleVendor from './pages/SingleVendor';
 import ShopGrid from './pages/ShopGrid';
+import SingleProduct from './pages/SingleProduct';
 function App() {
   const routes = useRoutes(
     [
@@ -32,7 +33,7 @@ function App() {
       {path:'/VendorList',element:<VendorListing/>},
       {path:'/SingleVendor',element:<SingleVendor/>},
       {path:'/ShopGrid',element:<ShopGrid/>},
-
+      {path:'/SingleProduct',element:<SingleProduct/>},
 
 
 
