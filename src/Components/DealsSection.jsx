@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import banner2 from "../imgs/page/homepage6/banner2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import '../css/navigation.min.css'
 const DealsSection = () => {
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -145,11 +145,11 @@ const DealsSection = () => {
                   </SwiperSlide>
                 </Swiper>
                 <div
-                  className="swiper-button-next swiper-button-next-style-4"
+                  className="  btn-next swiper-button-next-style-4"
                   onClick={nextHandler}
                 ></div>
                 <div
-                  className="swiper-button-prev swiper-button-prev-style-4"
+                  className=" btn-prev swiper-button-prev-style-4"
                   onClick={prevHandler}
                 ></div>
               </div>

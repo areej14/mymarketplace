@@ -10,10 +10,8 @@ import img1 from "../imgs/page/product/img-gallery-1.jpg";
 import ReactImageZoom from "react-image-zoom";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/swiper.min.css";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { Mousewheel, Pagination } from "swiper";
 // SwiperCore.use([Pagination]);
 const SingleProduct = () => {
@@ -86,87 +84,136 @@ const SingleProduct = () => {
                       <figure class="border-radius-10"><img src={img1} alt="product image"/></figure> */}
                       </div>
                     </div>
-                    <div class="slider-nav-thumbnails">
+                    <div className="slider-nav-thumbnails">
+                    <Swiper
+        direction={"vertical"}
+        slidesPerView={4}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide><div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>1
+                          </div></SwiperSlide>
+        <SwiperSlide><div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>2
+                          </div></SwiperSlide>
+        <SwiperSlide><div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>3
+                          </div></SwiperSlide>
+        <SwiperSlide><div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>4
+                          </div></SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+                    </div>
+                    {/* <div class="slider-nav-thumbnails">
                       <Swiper
-                       slidesPerView="3"
-                       slidesPerGroup="3"
-            mousewheel={true}
-            direction="vertical"
-            modules={[Pagination]}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+                        slidesPerView={3}
+                        // spaceBetween={30}
+                        pagination={{
+                          clickable: true,
+                        }}
+                        modules={[Pagination]}
                         className="mySwiper"
+                        direction="vertical"
                       >
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                            <img src={img1} alt="product image" />
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                            <img src={img1} alt="product image" />
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
                         <SwiperSlide>
                           {" "}
-                          <div> <div class="item-thumb">
-                            <img src={img1} alt="product image" />
-                          </div></div>
-                          
+                          <div>
+                            {" "}
+                            <div class="item-thumb">
+                              <img src={img1} alt="product image" />
+                            </div>
+                          </div>
                         </SwiperSlide>
-                        {/* <SwiperSlide>
-                          {" "}
-                        
-                        </SwiperSlide> */}
-                        
-                       
-                       
-                       
+                      
                       </Swiper>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
