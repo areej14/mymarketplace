@@ -1,0 +1,39 @@
+import React ,{useState} from "react";
+import ReactDOM from "react-dom";
+import Slider from "react-slick";
+import "./index.css";
+
+class ReactSlickDemo extends React.Component {
+  const [slickRef, setSlickRef] = null;
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      vertical: true,
+      verticalSwiping: true,
+    };
+    return (
+      <div className="container">
+        <Slider {...settings}>
+          <div class='slide-prev'>
+            <img src="http://placekitten.com/g/400/200" />
+          </div>
+          <div class='slide-prev'>
+            <img src="http://placekitten.com/g/400/200" />
+          </div>
+          <div class='slide-prev'>
+            <img src="http://placekitten.com/g/400/200" />
+          </div>
+          <div class='slide-prev'>
+            <img src="http://placekitten.com/g/400/200" />
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<ReactSlickDemo />, document.getElementById("container"));
