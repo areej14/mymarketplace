@@ -2,6 +2,7 @@ import React from 'react'
 import googlePlay from "../imgs/template/google-play.png";
 import payment from "../imgs/template/payment-method.png"
 import appStore from "../imgs/template/appstore.png"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -80,9 +81,9 @@ const Footer = () => {
                   &copy; 2022 Ecom Market. All rights reserved.</span></div>
               <div className="col-lg-6 col-md-12 text-center text-lg-end">
                 <ul className="menu-bottom">
-                  <li><a className="font-sm color-gray-900" href="page-term.html">Conditions of Use</a></li>
-                  <li><a className="font-sm color-gray-900" href="page-term.html">Privacy Notice</a></li>
-                  <li><a className="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
+                  <li><Link className="font-sm color-gray-900" to={`/terms`}>Conditions of Use</Link></li>
+                  <li><Link className="font-sm color-gray-900" to={`/terms`}>Privacy Notice</Link></li>
+                  <li><Link className="font-sm color-gray-900" to={`/Careers`}>Interest-Based Ads</Link></li>
                 </ul>
               </div>
             </div>

@@ -57,9 +57,9 @@ const Cart = () => {
                     </div>
                     <div className="wishlist-product">
                       <div className="product-wishlist">
-                        <div className="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"/></a></div>
-                        <div className="product-info"><a href="shop-single-product.html">
-                            <h6 className="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6></a>
+                        <div className="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"/></Link></div>
+                        <div className="product-info"><Link to={`/SingleProduct`}>
+                            <h6 className="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6></Link>
                           <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
@@ -85,9 +85,9 @@ const Cart = () => {
                     </div>
                     <div className="wishlist-product">
                       <div className="product-wishlist">
-                        <div className="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"/></a></div>
-                        <div className="product-info"><a href="shop-single-product.html">
-                            <h6 className="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6></a>
+                        <div className="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"/></Link></div>
+                        <div className="product-info"><Link to={`/SingleProduct`}>
+                            <h6 className="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6></Link>
                           <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
@@ -113,9 +113,9 @@ const Cart = () => {
                     </div>
                     <div className="wishlist-product">
                       <div className="product-wishlist">
-                        <div className="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"/></a></div>
-                        <div className="product-info"><a href="shop-single-product.html">
-                            <h6 className="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6></a>
+                        <div className="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"/></Link></div>
+                        <div className="product-info"><Link to={`/SingleProduct`}>
+                            <h6 className="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6></Link>
                           <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
@@ -215,8 +215,8 @@ const Cart = () => {
             <div className="card-grid-style-3">
               <div className="card-grid-inner">
                 <div className="tools"><a className="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a className="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                <div className="image-box"><span className="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"/></a></div>
-                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Hisense</a><br /><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Hisense 43&quot; Class 4K UHD LED XClass Smart TV HDR</a>
+                <div className="image-box"><span className="label bg-brand-2">-17%</span><Link to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp3.png" alt="Ecom"/></Link></div>
+                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Hisense</a><br /><Link className="color-brand-3 font-sm-bold" to={`/SingleProduct`}>Hisense 43&quot; Class 4K UHD LED XClass Smart TV HDR</Link>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500">(65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2856.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                   <div className="mt-20 box-btn-cart"><a className="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
@@ -231,8 +231,8 @@ const Cart = () => {
             <div className="card-grid-style-3">
               <div className="card-grid-inner">
                 <div className="tools"><a className="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a className="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                <div className="image-box"><span className="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"/></a></div>
-                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Silver</a>
+                <div className="image-box"><span className="label bg-brand-2">-17%</span><Link to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp4.png" alt="Ecom"/></Link></div>
+                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><Link className="color-brand-3 font-sm-bold" to={`/SingleProduct`}>2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Silver</Link>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500">(65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2856.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                   <div className="mt-20 box-btn-cart"><a className="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
@@ -247,8 +247,8 @@ const Cart = () => {
             <div className="card-grid-style-3">
               <div className="card-grid-inner">
                 <div className="tools"><a className="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a className="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                <div className="image-box"><span className="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"/></a></div>
-                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">LG</a><br /><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">LG 65&quot; Class 4K UHD Smart TV OLED A1 Series </a>
+                <div className="image-box"><span className="label bg-brand-2">-17%</span><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp5.png" alt="Ecom"/></a></div>
+                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">LG</a><br /><a className="color-brand-3 font-sm-bold" to={`/SingleProduct`}>LG 65&quot; Class 4K UHD Smart TV OLED A1 Series </a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500">(65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2856.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                   <div className="mt-20 box-btn-cart"><a className="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
@@ -263,8 +263,8 @@ const Cart = () => {
             <div className="card-grid-style-3">
               <div className="card-grid-inner">
                 <div className="tools"><a className="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a className="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                <div className="image-box"><span className="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp6.png" alt="Ecom"/></a></div>
-                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Apple AirPods Pro with MagSafe Charging Case</a>
+                <div className="image-box"><span className="label bg-brand-2">-17%</span><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp6.png" alt="Ecom"/></a></div>
+                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Apple</a><br /><a className="color-brand-3 font-sm-bold" to={`/SingleProduct`}>Apple AirPods Pro with MagSafe Charging Case</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500">(65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2856.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                   <div className="mt-20 box-btn-cart"><a className="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
@@ -279,8 +279,8 @@ const Cart = () => {
             <div className="card-grid-style-3">
               <div className="card-grid-inner">
                 <div className="tools"><a className="btn btn-trend btn-tooltip mb-10" href="#" aria-label="Trend" data-bs-placement="left"></a><a className="btn btn-wishlist btn-tooltip mb-10" href="shop-wishlist.html" aria-label="Add To Wishlist"></a><a className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview" data-bs-toggle="modal"></a></div>
-                <div className="image-box"><span className="label bg-brand-2">-17%</span><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp7.png" alt="Ecom"/></a></div>
-                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Razer</a><br /><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Razer Power Up Gaming Bundle V2 - Cynosa Lite</a>
+                <div className="image-box"><span className="label bg-brand-2">-17%</span><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp7.png" alt="Ecom"/></a></div>
+                <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Razer</a><br /><a className="color-brand-3 font-sm-bold" to={`/SingleProduct`}>Razer Power Up Gaming Bundle V2 - Cynosa Lite</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500">(65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2856.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                   <div className="mt-20 box-btn-cart"><a className="btn btn-cart" href="shop-cart.html">Add To Cart</a></div>
@@ -297,9 +297,9 @@ const Cart = () => {
           <div className="row mt-40">
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card-grid-style-2 card-grid-none-border hover-up">
-                <div className="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"/></a>
+                <div className="image-box"><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"/></a>
                 </div>
-                <div className="info-right"><span className="font-xs color-gray-500">HP</span><br /><a className="color-brand-3 font-xs-bold" href="shop-single-product.html">HP DeskJet 2755e Wireless Color All-in-One Printer</a>
+                <div className="info-right"><span className="font-xs color-gray-500">HP</span><br /><a className="color-brand-3 font-xs-bold" to={`/SingleProduct`}>HP DeskJet 2755e Wireless Color All-in-One Printer</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2556.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                 </div>
@@ -307,9 +307,9 @@ const Cart = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card-grid-style-2 card-grid-none-border hover-up">
-                <div className="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"/></a>
+                <div className="image-box"><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"/></a>
                 </div>
-                <div className="info-right"><span className="font-xs color-gray-500">HP</span><br /><a className="color-brand-3 font-xs-bold" href="shop-single-product.html">Original HP 63XL Black High-yield Ink Cartridge</a>
+                <div className="info-right"><span className="font-xs color-gray-500">HP</span><br /><a className="color-brand-3 font-xs-bold" to={`/SingleProduct`}>Original HP 63XL Black High-yield Ink Cartridge</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2556.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                 </div>
@@ -317,9 +317,9 @@ const Cart = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card-grid-style-2 card-grid-none-border hover-up">
-                <div className="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"/></a>
+                <div className="image-box"><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp1.png" alt="Ecom"/></a>
                 </div>
-                <div className="info-right"><span className="font-xs color-gray-500">Logitech</span><br /><a className="color-brand-3 font-xs-bold" href="shop-single-product.html">Logitech H390 Wired Headset, Stereo Headphones</a>
+                <div className="info-right"><span className="font-xs color-gray-500">Logitech</span><br /><a className="color-brand-3 font-xs-bold" to={`/SingleProduct`}>Logitech H390 Wired Headset, Stereo Headphones</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2556.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                 </div>
@@ -327,9 +327,9 @@ const Cart = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card-grid-style-2 card-grid-none-border hover-up">
-                <div className="image-box"><a href="shop-single-product.html"><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"/></a>
+                <div className="image-box"><a to={`/SingleProduct`}><img src="assets/imgs/page/homepage1/imgsp2.png" alt="Ecom"/></a>
                 </div>
-                <div className="info-right"><span className="font-xs color-gray-500">Logitech</span><br /><a className="color-brand-3 font-xs-bold" href="shop-single-product.html">Logitech MK345 Wireless Combo Full-Sized</a>
+                <div className="info-right"><span className="font-xs color-gray-500">Logitech</span><br /><a className="color-brand-3 font-xs-bold" to={`/SingleProduct`}>Logitech MK345 Wireless Combo Full-Sized</a>
                   <div className="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span className="font-xs color-gray-500"> (65)</span></div>
                   <div className="price-info"><strong className="font-lg-bold color-brand-3 price-main">$2556.3</strong><span className="color-gray-500 price-line">$3225.6</span></div>
                 </div>

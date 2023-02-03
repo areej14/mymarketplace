@@ -312,12 +312,12 @@ const Header = () => {
                     </div> */}
                   </div>
                 </div>
-                <a
+                <Link
                   className="font-lg icon-list icon-compare"
-                  href="shop-compare.html"
+                  to={`/Compare`}
                 >
                   <span>Compare</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -612,39 +612,39 @@ const Header = () => {
                 <ul className="main-menu">
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Fashion</a>
+                    <Link to={`/ShopGrid`}>Fashion</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Kid's Zone</a>
+                    <Link to={`/ShopGrid`}>Kid's Zone</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Games</a>
+                    <Link to={`/ShopGrid`}>Games</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Electronics</a>
+                    <Link to={`/ShopGrid`}>Electronics</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Medicine & Fitness</a>
+                    <Link to={`/ShopGrid`}>Medicine & Fitness</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Grocery</a>
+                    <Link to={`/ShopGrid`}>Grocery</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Food Court</a>
+                    <Link to={`/ShopGrid`}>Food Court</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Automotive & Agriculture</a>
+                    <Link to={`/ShopGrid`}>Automotive & Agriculture</Link>
                   </li>
                   <li>
                     {" "}
-                    <a href="shop-grid.html">Services</a>
+                    <Link to={`/ShopGrid`}>Services</Link>
                   </li>
                 </ul>
 
@@ -691,7 +691,7 @@ const Header = () => {
                       {/* <ul className="sub-menu"></ul> */}
                     </li>
                     <li className="has-children">
-                      <a href="shop-grid.html">Shop</a>
+                      <Link to={`/ShopGrid`}>Shop</Link>
                       {/* <span className="menu-expand"><i className="fi-rr-caret-down"></i></span> */}
                       {/* <ul className="sub-menu">
                         <li >
@@ -765,39 +765,39 @@ const Header = () => {
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Fashion</a>
+                      <Link to={`/ShopGrid`}>Fashion</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Kid's Zone</a>
+                      <Link to={`/ShopGrid`}>Kid's Zone</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Games</a>
+                      <Link to={`/ShopGrid`}>Games</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Electronics</a>
+                      <Link to={`/ShopGrid`}>Electronics</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Medicine & Fitness</a>
+                      <Link to={`/ShopGrid`}>Medicine & Fitness</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Grocery</a>
+                      <Link to={`/ShopGrid`}>Grocery</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Food Court</a>
+                      <Link to={`/ShopGrid`}>Food Court</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Automotive & Agriculture</a>
+                      <Link to={`/ShopGrid`}>Automotive & Agriculture</Link>
                     </li>
                     <li>
                       {" "}
-                      <a href="shop-grid.html">Services</a>
+                      <Link to={`/ShopGrid`}>Services</Link>
                     </li>
                   </ul>
                 </nav>
@@ -846,9 +846,9 @@ const Header = () => {
                   </span>
                   <h3 className="font-xl mb-10">iPhone 12 Pro 128Gb</h3>
                   <p className="font-base color-brand-3 mb-10">Special Sale</p>
-                  <a className="btn btn-arrow" href="shop-grid.html">
+                  <Link className="btn btn-arrow" to={`/ShopGrid`}>
                     learn more
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="site-copyright color-gray-400 mt-30">

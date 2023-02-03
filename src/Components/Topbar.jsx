@@ -18,9 +18,9 @@ const Topbar = () => {
               </Link>
             </li>
             <li>
-              <a className="font-xs" href="page-careers.html">
+              <Link className="font-xs" to={`/Careers`}>
                 Careers
-              </a>
+              </Link>
             </li>
             <li>
               <Link className="font-xs" to={`/Register`}>

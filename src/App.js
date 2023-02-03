@@ -17,6 +17,10 @@ import SingleVendor from './pages/SingleVendor';
 import ShopGrid from './pages/ShopGrid';
 import SingleProduct from './pages/SingleProduct';
 import Checkout from './pages/Checkout';
+import Compare from './pages/Compare';
+import Careers from './pages/Careers';
+import Terms from './pages/Terms';
+import NotFound from './pages/NotFound';
 
 function App() {
   const routes = useRoutes(
@@ -37,6 +41,14 @@ function App() {
       {path:'/ShopGrid',element:<ShopGrid/>},
       {path:'/SingleProduct',element:<SingleProduct/>},
       {path:'/Checkout',element:<Checkout/>},
+      {path:'/Compare',element:<Compare/>},
+      {path:'/Careers',element:<Careers/>},
+      {path:'/terms',element:<Terms/>},
+      {path:'*',element:<NotFound/>},
+
+
+
+
 
       
      

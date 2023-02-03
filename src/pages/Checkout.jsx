@@ -133,9 +133,9 @@ const Checkout = () => {
                   <div class="item-wishlist">
                     <div class="wishlist-product">
                       <div class="product-wishlist">
-                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"/></a></div>
-                        <div class="product-info"><a href="shop-single-product.html">
-                            <h6 class="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6></a>
+                        <div class="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub.png" alt="Ecom"/></Link></div>
+                        <div class="product-info"><Link to={`/SingleProduct`}>
+                            <h6 class="color-brand-3">Gateway 23.8&quot; All-in-one Desktop, Fully Adjustable Stand</h6></Link>
                           <div class="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span class="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
@@ -150,9 +150,9 @@ const Checkout = () => {
                   <div class="item-wishlist">
                     <div class="wishlist-product">
                       <div class="product-wishlist">
-                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"/></a></div>
-                        <div class="product-info"><a href="shop-single-product.html">
-                            <h6 class="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6></a>
+                        <div class="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub2.png" alt="Ecom"/></Link></div>
+                        <div class="product-info"><Link to={`/SingleProduct`}>
+                            <h6 class="color-brand-3">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6></Link>
                           <div class="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span class="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
@@ -167,9 +167,9 @@ const Checkout = () => {
                   <div class="item-wishlist">
                     <div class="wishlist-product">
                       <div class="product-wishlist">
-                        <div class="product-image"><a href="shop-single-product.html"><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"/></a></div>
-                        <div class="product-info"><a href="shop-single-product.html">
-                            <h6 class="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6></a>
+                        <div class="product-image"><Link to={`/SingleProduct`}><img src="assets/imgs/page/product/img-sub3.png" alt="Ecom"/></Link></div>
+                        <div class="product-info"><Link to={`/SingleProduct`}>
+                            <h6 class="color-brand-3">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6></Link>
                           <div class="rating"><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><img src={star} alt="Ecom"/><span class="font-xs color-gray-500"> (65)</span></div>
                         </div>
                       </div>
