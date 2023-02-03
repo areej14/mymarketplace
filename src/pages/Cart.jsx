@@ -5,7 +5,7 @@ import Header from "../Components/Header";
 import ScrollToTop from "react-scroll-to-top";
 import Footer from '../Components/Footer';
 import star from '../imgs/template/icons/star.svg'
-
+import { Link } from 'react-router-dom';
 const Cart = () => {
   return (
     <>
@@ -206,10 +206,10 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
-                <div className="box-button"><a className="btn btn-buy" href="shop-checkout.html">Proceed To CheckOut</a></div>
+                <div className="box-button"><Link className="btn btn-buy" to={`/Checkout`}>Proceed To CheckOut</Link></div>
               </div>
             </div>
-          </div>
+          </div> 
           <h4 className="color-brand-3">You may also like</h4>
           <div className="list-products-5 mt-20 mb-40">
             <div className="card-grid-style-3">

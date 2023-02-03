@@ -8260,7 +8260,7 @@ a:hover span {
 }
 
 .galleries {
-  padding: 0px 0px 0px 105px;
+ text-align: center;
   position: relative;
   width: 100%;
 }
