@@ -41,12 +41,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={apple} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={apple} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -72,12 +72,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={philips} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={philips} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Philips</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Philips H4205 On-Ear Wireless Headphones with 32mm</a>
+                      href="shop-vendor-single.html">Philips</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Philips H4205 On-Ear Wireless Headphones with 32mm</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -103,12 +103,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleMac} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleMac} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -134,12 +134,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleWatch} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleWatch} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Apple Watch Series 8 [GPS 45mm] Smart Watch</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Apple Watch Series 8 [GPS 45mm] Smart Watch</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -165,12 +165,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={camera} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={camera} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Kami
-                      Tech</a><br/><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Kami by YI 4pc
-                      1080p Home Security Cameras</a>
+                      Tech</a><br/><Link className="color-brand-3 font-sm-bold"to={`/SingleProduct`}>Kami by YI 4pc
+                      1080p Home Security Cameras</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -200,12 +200,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleMac} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleMac} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -231,12 +231,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleWatch} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link 
+                     to={`/SingleProduct`}><img src={appleWatch} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Apple Watch Series 8 [GPS 45mm] Smart Watch</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Apple Watch Series 8 [GPS 45mm] Smart Watch</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -262,12 +262,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={camera} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={camera} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Kami
-                      Tech</a><br/><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Kami by YI 4pc
-                      1080p Home Security Cameras</a>
+                      Tech</a><br/><Link className="color-brand-3 font-sm-bold"to={`/SingleProduct`}>Kami by YI 4pc
+                      1080p Home Security Cameras</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -293,12 +293,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={apple} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={apple} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -324,12 +324,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={philips} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={philips} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Philips</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Philips H4205 On-Ear Wireless Headphones with 32mm</a>
+                      href="shop-vendor-single.html">Philips</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Philips H4205 On-Ear Wireless Headphones with 32mm</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -359,12 +359,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleMac} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleMac} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -390,12 +390,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleWatch} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleWatch} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Apple Watch Series 8 [GPS 45mm] Smart Watch</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Apple Watch Series 8 [GPS 45mm] Smart Watch</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -421,12 +421,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={apple} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={apple} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -452,12 +452,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={philips} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={philips} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Philips</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Philips H4205 On-Ear Wireless Headphones with 32mm</a>
+                      href="shop-vendor-single.html">Philips</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Philips H4205 On-Ear Wireless Headphones with 32mm</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -483,12 +483,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={camera} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={camera} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Kami
-                      Tech</a><br/><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Kami by YI 4pc
-                      1080p Home Security Cameras</a>
+                      Tech</a><br/><Link className="color-brand-3 font-sm-bold"to={`/SingleProduct`}>Kami by YI 4pc
+                      1080p Home Security Cameras</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -518,12 +518,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={camera} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={camera} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500" href="shop-vendor-single.html">Kami
-                      Tech</a><br/><a className="color-brand-3 font-sm-bold" href="shop-single-product.html">Kami by YI 4pc
-                      1080p Home Security Cameras</a>
+                      Tech</a><br/><Link className="color-brand-3 font-sm-bold"to={`/SingleProduct`}>Kami by YI 4pc
+                      1080p Home Security Cameras</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -549,12 +549,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={apple} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={apple} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -580,12 +580,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={philips} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={philips} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Philips</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Philips H4205 On-Ear Wireless Headphones with 32mm</a>
+                      href="shop-vendor-single.html">Philips</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Philips H4205 On-Ear Wireless Headphones with 32mm</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -611,12 +611,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleMac} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleMac} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
@@ -642,12 +642,12 @@ const BestSeller = () => {
                       className="btn btn-compare btn-tooltip mb-10" href="shop-compare.html" aria-label="Compare"></a><a
                       className="btn btn-quickview btn-tooltip" aria-label="Quick view" href="#ModalQuickview"
                       data-bs-toggle="modal"></a></div>
-                  <div className="image-box"><span className="label bg-brand-2">-17%</span><a
-                      href="shop-single-product.html"><img src={appleWatch} alt="Ecom"/></a>
+                  <div className="image-box"><span className="label bg-brand-2">-17%</span><Link
+                     to={`/SingleProduct`}><img src={appleWatch} alt="Ecom"/></Link>
                   </div>
                   <div className="info-right"><a className="font-xs color-gray-500"
-                      href="shop-vendor-single.html">Apple</a><br/><a className="color-brand-3 font-sm-bold"
-                      href="shop-single-product.html">Apple Watch Series 8 [GPS 45mm] Smart Watch</a>
+                      href="shop-vendor-single.html">Apple</a><br/><Link className="color-brand-3 font-sm-bold"
+                     to={`/SingleProduct`}>Apple Watch Series 8 [GPS 45mm] Smart Watch</Link>
                     <div className="rating"><img src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img
                         src={star} alt="Ecom"/><img

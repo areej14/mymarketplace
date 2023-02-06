@@ -22,13 +22,13 @@ const NotFound = () => {
       <Topbar/>
       <Header />
       <main className="main">
-      <section class="section-box shop-template mt-60">
-        <div class="container">
-          <div class="text-center mb-150 mt-50"> 
-            <div class="image-404 mb-50"> <img src={account} alt="Ecom"/></div>
+      <section className="section-box shop-template mt-60">
+        <div className="container">
+          <div className="text-center mb-150 mt-50"> 
+            <div className="image-404 mb-50"> <img src={account} alt="Ecom"/></div>
             <h3>404 - Page Not Found</h3>
-            <p class="font-md-bold color-gray-600">Looks like, page doesn't exist</p>
-            <div class="mt-15"> <Link class="btn btn-buy w-auto arrow-back" to={`/`}>Back to Homepage</Link></div>
+            <p className="font-md-bold color-gray-600">Looks like, page doesn't exist</p>
+            <div className="mt-15"> <Link className="btn btn-buy w-auto arrow-back" to={`/`}>Back to Homepage</Link></div>
           </div>
         </div>
       </section>

@@ -22,22 +22,22 @@ const Careers = () => {
       <Topbar/>
       <Header />
       <main className="main">
-      <div class="section-box">
-        <div class="breadcrumbs-div">
-          <div class="container">
-            <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="index.html">Pages</a></li>
-              <li><a class="font-xs color-gray-500" href="page-term.html">Careers</a></li>
+      <div className="section-box">
+        <div className="breadcrumbs-div">
+          <div className="container">
+            <ul className="breadcrumb">
+              <li><a className="font-xs color-gray-1000" href="index.html">Home</a></li>
+              <li><a className="font-xs color-gray-500" href="index.html">Pages</a></li>
+              <li><a className="font-xs color-gray-500" href="page-term.html">Careers</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <section class="section-box shop-template mt-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto page-content">
-              <h2 class="text-center mb-20">Work with us</h2><img class="mb-30" src={team} alt="Ecom"/>
+      <section className="section-box shop-template mt-30">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 mx-auto page-content">
+              <h2 className="text-center mb-20">Work with us</h2><img className="mb-30" src={team} alt="Ecom"/>
               <p>We recognize that poverty has no borders. Neither does excellence. We are continually in search of the brightest, most talented individuals from around the globe.</p>
               <h5>Programs and Internships</h5>
               <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>

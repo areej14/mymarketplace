@@ -6,17 +6,23 @@ import ScrollToTop from "react-scroll-to-top";
 import Footer from "../Components/Footer";
 import InfoSection from "../Components/InfoSection";
 import star from "../imgs/template/icons/star.svg";
+import bannerImg from "../imgs/page/shop/banner.png"
+import img1 from "../imgs/page/product/img-gallery-1.jpg";
 import MultiRangeSlider from "multi-range-slider-react";
 import '../css/multirangeslider.css'
+import ReactImageZoom from "react-image-zoom";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Mousewheel, Pagination } from "swiper";
 const ShopGrid = () => {
-  const customStyles = {
-   border:'0',
-   boxShadow:'none',
-    "&.thumb": (base) => ({
-      ...base,
-      border:'none'
-    }),
-
+  const props = {
+    width: 400,
+    height: 420,
+    zoomWidth: 500,
+    img: img1,
+    zoomPosition: "original",
    
   };
   return (
@@ -40,7 +46,7 @@ const ShopGrid = () => {
               <div className="col-lg-9 order-first order-lg-last">
                 <div className="banner-ads-top mb-30">
                   <a href="shop-single-product-3.html">
-                    <img src="assets/imgs/page/shop/banner.png" alt="Ecom" />
+                    <img src={bannerImg} alt="Ecom" />
                   </a>
                 </div>
                 <div className="box-filters mt-0 pb-5 border-bottom">
@@ -2865,9 +2871,9 @@ const ShopGrid = () => {
                   <div className="sidebar-content">
                     <h6 className="color-gray-900 mt-10 mb-10">Price</h6>
                     <div className="box-slider-range mt-20 mb-15">
-                      <div class="row mb-20">
+                      <div className="row mb-20">
                         <div
-                          class="col-sm-12">
+                          className="col-sm-12">
                                 {/* <ReactSlider defaultValue={[4,20]}
                                 className="slider"
                                 trackClassName="tracker"
@@ -2911,7 +2917,7 @@ const ShopGrid = () => {
                           
                         </div>
                       </div>
-                      <div className="row">
+                      {/* <div className="row">
                         <div className="col-lg-12">
                           <label className="lb-slider font-sm color-gray-500">
                             Price Range:
@@ -2935,7 +2941,7 @@ const ShopGrid = () => {
                             value=""
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                     <ul className="list-checkbox">
                       <li>
@@ -3848,6 +3854,7 @@ const ShopGrid = () => {
             </div>
           </div>
         </div>
+        {/* quickview modal */}
         <div
           className="modal fade"
           id="ModalQuickview"
@@ -3870,107 +3877,68 @@ const ShopGrid = () => {
                       <div className="galleries-2">
                         <div className="detail-gallery">
                           <div className="product-image-slider-2">
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-1.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-2.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-3.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-4.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-5.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-6.jpg"
-                                alt="product image"
-                              />
-                            </figure>
-                            <figure className="border-radius-10">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-7.jpg"
-                                alt="product image"
-                              />
-                            </figure>
+                          <ReactImageZoom {...props} style={{marginTop:'50px'}}/>
+                       
                           </div>
                         </div>
                         <div className="slider-nav-thumbnails-2">
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-1.jpg"
-                                alt="product image"
-                              />
-                            </div>
+                        <Swiper
+                      slidesPerView={4}
+                      loop={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      spaceBetween={50}
+                      calculateHeight={true}
+                      modules={[Pagination]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide>
+                        {" "}
+                        <div>
+                          {" "}
+                          <div className="item-thumb">
+                            <img src={img1} alt="product image" />
                           </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-2.jpg"
-                                alt="product image"
-                              />
-                            </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div>
+                          {" "}
+                          <div className="item-thumb">
+                            <img src={img1} alt="product image" />
                           </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-3.jpg"
-                                alt="product image"
-                              />
-                            </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div>
+                          {" "}
+                          <div className="item-thumb">
+                            <img src={img1} alt="product image" />
                           </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-4.jpg"
-                                alt="product image"
-                              />
-                            </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div>
+                          {" "}
+                          <div className="item-thumb">
+                            <img src={img1} alt="product image" />
                           </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-5.jpg"
-                                alt="product image"
-                              />
-                            </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        {" "}
+                        <div>
+                          {" "}
+                          <div className="item-thumb">
+                            <img src={img1} alt="product image" />
                           </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-6.jpg"
-                                alt="product image"
-                              />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="item-thumb">
-                              <img
-                                src="assets/imgs/page/product/img-gallery-7.jpg"
-                                alt="product image"
-                              />
-                            </div>
-                          </div>
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
                         </div>
                       </div>
                     </div>
@@ -4048,9 +4016,7 @@ const ShopGrid = () => {
                       <div className="box-product-color mt-10">
                         <p className="font-sm color-gray-900">
                           Color:
-                          <span className="color-brand-2 nameColor">
-                            Pink Gold
-                          </span>
+                          <span className="color-brand-2 nameColor">Pink Gold</span>
                         </p>
                         <ul className="list-colors">
                           <li className="disabled">
@@ -4109,9 +4075,7 @@ const ShopGrid = () => {
                           <div className="col-lg-12 mb-10">
                             <p className="font-sm color-gray-900">
                               Style:
-                              <span className="color-brand-2 nameStyle">
-                                S22
-                              </span>
+                              <span className="color-brand-2 nameStyle">S22</span>
                             </p>
                             <ul className="list-styles">
                               <li className="disabled" title="S22 Ultra">
@@ -4128,9 +4092,7 @@ const ShopGrid = () => {
                           <div className="col-lg-12 mb-10">
                             <p className="font-sm color-gray-900">
                               Size:
-                              <span className="color-brand-2 nameSize">
-                                512GB
-                              </span>
+                              <span className="color-brand-2 nameSize">512GB</span>
                             </p>
                             <ul className="list-sizes">
                               <li className="disabled" title="1GB">
@@ -4164,10 +4126,7 @@ const ShopGrid = () => {
                             <a className="btn btn-cart" href="shop-cart.html">
                               Add to cart
                             </a>
-                            <a
-                              className="btn btn-buy"
-                              href="shop-checkout.html"
-                            >
+                            <a className="btn btn-buy" href="shop-checkout.html">
                               Buy now
                             </a>
                           </div>

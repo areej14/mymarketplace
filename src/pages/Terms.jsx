@@ -22,22 +22,22 @@ const Terms = () => {
       <Topbar/>
       <Header />
       <main className="main">
-      <div class="section-box">
-        <div class="breadcrumbs-div">
-          <div class="container">
-            <ul class="breadcrumb">
-              <li><a class="font-xs color-gray-1000" href="index.html">Home</a></li>
-              <li><a class="font-xs color-gray-500" href="index.html">Pages</a></li>
-              <li><a class="font-xs color-gray-500" href="page-term.html">Term and Condition</a></li>
+      <div className="section-box">
+        <div className="breadcrumbs-div">
+          <div className="container">
+            <ul className="breadcrumb">
+              <li><a className="font-xs color-gray-1000" href="index.html">Home</a></li>
+              <li><a className="font-xs color-gray-500" href="index.html">Pages</a></li>
+              <li><a className="font-xs color-gray-500" href="page-term.html">Term and Condition</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <section class="section-box shop-template mt-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 mx-auto page-content">
-              <h2 class="text-center mb-20">Term and Condition</h2><img class="mb-30" src={team} alt="Ecom"/>
+      <section className="section-box shop-template mt-30">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 mx-auto page-content">
+              <h2 className="text-center mb-20">Term and Condition</h2><img className="mb-30" src={team} alt="Ecom"/>
               <p>Thank you for supporting Ecom. In order to protect your personal data when you enjoy using services at Ecom, we draw up this privacy policy.</p>
               <h5>1. Collection of Personal Data.</h5>
               <p><strong>1.1 Definition of personal data</strong></p>

@@ -77,6 +77,15 @@ header.sticky-bar.stick #wdw_NavBar .wdw_FixedManu {
   padding: 5px 10px 5px 10px;
   background-color: #ffffff;
 }
+.card-grid-style-3 .card-grid-inner {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #D5DFE4;
+  padding: 15px;
+  position: relative;
+  transition-duration: 0.2s;
+  height: 550px;
+}
 }
 /* 3rd layer options in sidebar  */
 .dropdown .menu-texts.menu-close > li> .sub-menu >li.has-children >a {
