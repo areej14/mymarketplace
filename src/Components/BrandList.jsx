@@ -24,6 +24,24 @@ const BrandList = () => {
             <div className="swiper-container swiper-group-10">
               <div className="swiper-wrapper">
                 <Swiper
+                breakpoints= {{
+                1360: {
+                    slidesPerView: 15
+                },
+                1199: {
+                    slidesPerView: 11
+                },
+                800: {
+                    slidesPerView: 8
+                },
+                390: {
+                    slidesPerView: 5
+                },
+                250: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 1
+                }
+            }}
                   slidesPerView={9}
                   slidesPerColumn={2}
                   spaceBetween={30}
