@@ -3400,8 +3400,8 @@ const ShopGrid = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="swiper-button-next swiper-button-next-style-2 swiper-button-next-bestseller"></div>
-                      <div className="swiper-button-prev swiper-button-prev-style-2 swiper-button-prev-bestseller"></div>
+                      {/* <div className="swiper-button-next swiper-button-next-style-2 swiper-button-next-bestseller"></div>
+                      <div className="swiper-button-prev swiper-button-prev-style-2 swiper-button-prev-bestseller"></div> */}
                     </div>
                   </div>
                 </div>
